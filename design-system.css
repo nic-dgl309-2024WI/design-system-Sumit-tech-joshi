@@ -1,13 +1,12 @@
 
 
 /* Flex container for the top navbar */
-.c-header__navbar {
+.l-header {
     display: flex;
     justify-content: space-between;
 }
 
-/* Hide all <i> elements inside the top navbar */
-.c-header__navbar i {
+#close-icon {
     display: none;
 }
 
