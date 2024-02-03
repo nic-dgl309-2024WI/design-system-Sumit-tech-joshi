@@ -1,3 +1,8 @@
+/* 
+   Top Navbar Styles
+   ----------------------------------------
+*/
+
 /* Flex container for the top navbar */
 .l-header {
   display: flex;
@@ -5,22 +10,29 @@
   background-color: var(--clr-light);
 }
 
-/* Close icon set to display none initialy */
+/* Close icon set to display none initially */
 #close-icon {
   display: none;
 }
 
-/* Flex container for the navigation links in the top navbar */
-.c-header__navbar ul {
-  display: flex;
+/* Navbar link set text decoration to none */
+.l-header__navbar a {
   text-decoration: none;
 }
 
-.l-sidebar{
-    background-color: var(--clr-light);
+/* Navbar link hover effect */
+.l-header__navbar a:hover {
+    color: var(--clr-accent);
 }
 
-/* utility classes for section titles with different priority colors */
+/* Sidebar Styles
+     ---------------------------------------- */
+
+.l-sidebar {
+  background-color: var(--clr-light);
+}
+
+/* Utility classes for section titles with different priority colors */
 .u-sidebar__text--primary {
   color: var(--clr-primary);
 }
