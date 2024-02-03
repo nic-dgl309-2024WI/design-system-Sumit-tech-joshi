@@ -1,17 +1,42 @@
-
-
 /* Flex container for the top navbar */
 .l-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-light);
 }
 
+/* Close icon set to display none initialy */
 #close-icon {
-    display: none;
+  display: none;
 }
 
 /* Flex container for the navigation links in the top navbar */
 .c-header__navbar ul {
-    display: flex;
-    text-decoration: none;
+  display: flex;
+  text-decoration: none;
+}
+
+.l-sidebar{
+    background-color: var(--clr-light);
+}
+
+/* utility classes for section titles with different priority colors */
+.u-sidebar__text--primary {
+  color: var(--clr-primary);
+}
+
+.u-sidebar__text--secondary {
+  color: var(--clr-secondary);
+}
+
+.u-sidebar__text--accent {
+  color: var(--clr-accent);
+}
+
+.u-sidebar__text--light {
+  color: var(--clr-light);
+}
+
+.u-sidebar__text--white {
+  color: var(--clr-white);
 }
