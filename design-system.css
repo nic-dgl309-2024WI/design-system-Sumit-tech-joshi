@@ -1,0 +1,18 @@
+
+
+/* Flex container for the top navbar */
+.c-header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hide all <i> elements inside the top navbar */
+.c-header__navbar i {
+    display: none;
+}
+
+/* Flex container for the navigation links in the top navbar */
+.c-header__navbar ul {
+    display: flex;
+    text-decoration: none;
+}
