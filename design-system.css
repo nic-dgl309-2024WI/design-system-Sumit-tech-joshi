@@ -25,6 +25,11 @@
     color: var(--clr-accent);
 }
 
+/* Active page link */
+.is-active-page {
+    color: var(--clr-dark-grey);
+}
+
 /* Sidebar Styles
      ---------------------------------------- */
 
