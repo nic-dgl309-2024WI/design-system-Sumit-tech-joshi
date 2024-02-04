@@ -20,14 +20,19 @@
   text-decoration: none;
 }
 
+/* Navbar icon padding to 5px */
+.l-header i {
+  padding: 5px;
+}
+
 /* Navbar link hover effect */
 .l-header__navbar a:hover {
-    color: var(--clr-accent);
+  color: var(--clr-accent);
 }
 
 /* Active page link */
 .is-active-page {
-    color: var(--clr-dark-grey);
+  color: var(--clr-dark-grey);
 }
 
 /* Sidebar Styles
@@ -38,7 +43,11 @@
 }
 
 .c-sidebar__list--wrapper {
-    margin: 0;
+  margin: 0;
+}
+
+.c-sidebar__list--title {
+  padding: 10px 0px;
 }
 
 /* Utility classes for section titles with different priority colors */
