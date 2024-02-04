@@ -31,11 +31,11 @@
 }
 
 .is-show-icon {
-    display: none !important;
+  display: none !important;
 }
 
 .hide-sidebar-menu {
-    display: none;
+  display: none;
 }
 
 /* Sidebar Styles
@@ -72,4 +72,29 @@
 
 .u-sidebar__text--white {
   color: var(--clr-white);
+}
+
+/* ==Media Queries for desktops, 1200px and up) == */
+@media only screen and (min-width: 1200px) {
+  #hamburger-icon, #close-icon {
+    display: none;
+  }
+
+  /* Add gap between header items */
+  .l-header__navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Set list style none to header */
+  .l-header__navbar li {
+    list-style: none;
+  }
+
+  /* Display nav list as flex */
+  .l-header__list {
+    display: flex;
+    gap: 10px;
+  }
 }
