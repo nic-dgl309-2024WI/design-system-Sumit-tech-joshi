@@ -56,27 +56,6 @@
   padding: 10px 0px;
 }
 
-/* Utility classes for section titles with different priority colors */
-.u-sidebar__text--primary {
-  color: var(--clr-primary);
-}
-
-.u-sidebar__text--secondary {
-  color: var(--clr-secondary);
-}
-
-.u-sidebar__text--accent {
-  color: var(--clr-accent);
-}
-
-.u-sidebar__text--light {
-  color: var(--clr-light);
-}
-
-.u-sidebar__text--white {
-  color: var(--clr-white);
-}
-
 /* ==Media Queries for desktops, 1200px and up) == */
 @media only screen and (min-width: 1200px) {
   #hamburger-icon,
