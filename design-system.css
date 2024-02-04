@@ -30,10 +30,12 @@
   color: var(--clr-dark-grey);
 }
 
+/* Toggle class for hamburger icon */
 .is-show-icon {
   display: none !important;
 }
 
+/* Initially hide sidebar menu */
 .hide-sidebar-menu {
   display: none;
 }
@@ -45,10 +47,11 @@
   background-color: var(--clr-light);
 }
 
+/* Remove margin from sidebar */
 .c-sidebar__list--wrapper {
   margin: 0;
 }
-
+/* Add top padding to sidebar title */
 .c-sidebar__list--title {
   padding: 10px 0px;
 }
@@ -76,8 +79,14 @@
 
 /* ==Media Queries for desktops, 1200px and up) == */
 @media only screen and (min-width: 1200px) {
-  #hamburger-icon, #close-icon {
+  #hamburger-icon,
+  #close-icon {
     display: none;
+  }
+
+  /* Show sidenavbar in desktop view */
+  .hide-sidebar-menu {
+    display: block;
   }
 
   /* Add gap between header items */
