@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
-    <link rel="stylesheet" type="text/css" href="design-system.js" />
+    <script src="design-system.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
@@ -14,16 +14,16 @@
     <header class="l-header">
       <nav class="l-header__navbar">
         <h1>Design System</h1>
-        <ul>
+        <ul id="nav-link-wrapper">
           <li><a href="about-me.html">About Me</a></li>
           <li><a href="#" class="is-active-page">Demo Site</a></li>
         </ul>
       </nav>
-      <i class="fa fa-bars" id="hamburger-icon" aria-hidden="true"></i>
-      <i class="fa fa-times" id="close-icon" aria-hidden="true"></i>
+      <i class="fa fa-bars" id="hamburger-icon" aria-hidden="true" onclick="handleToggleClick()"></i>
+      <i class="fa fa-times is-show-icon" id="close-icon" aria-hidden="true" onclick="handleToggleClick()"></i>
     </header>
     <nav class="l-sidebar">
-      <ul class="c-sidebar__list--wrapper">
+      <ul class="c-sidebar__list--wrapper" id="sidebar-wrapper">
         <li class="c-sidebar__list--title">
           <a href="#" class="c-sidebar__link">Branding</a>
         </li>

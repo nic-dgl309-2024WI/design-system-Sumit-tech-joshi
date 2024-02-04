@@ -10,11 +10,6 @@
   background-color: var(--clr-light);
 }
 
-/* Close icon set to display none initially */
-#close-icon {
-  display: none;
-}
-
 /* Navbar link set text decoration to none */
 .l-header__navbar a {
   text-decoration: none;
@@ -33,6 +28,14 @@
 /* Active page link */
 .is-active-page {
   color: var(--clr-dark-grey);
+}
+
+.is-show-icon {
+    display: none !important;
+}
+
+.hide-sidebar-menu {
+    display: none;
 }
 
 /* Sidebar Styles
