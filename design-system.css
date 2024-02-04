@@ -37,6 +37,10 @@
   background-color: var(--clr-light);
 }
 
+.c-sidebar__list--wrapper {
+    margin: 0;
+}
+
 /* Utility classes for section titles with different priority colors */
 .u-sidebar__text--primary {
   color: var(--clr-primary);
