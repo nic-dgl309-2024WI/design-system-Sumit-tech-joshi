@@ -96,7 +96,7 @@
 .l-header {
   display: flex;
   justify-content: space-between;
-  background-color: var(--clr-light);
+  background-color: var(--clr-secondary-100);
 }
 
 /* Navbar link set text decoration to none */
@@ -111,12 +111,20 @@
 
 /* Navbar link hover effect */
 .l-header__navbar a:hover {
-  color: var(--clr-accent);
+  color: var(--clr-accent-one-100);
 }
 
 /* Active page link */
 .is-active-page {
-  color: var(--clr-dark-grey);
+  color: var(--clr-mid-dark);
+}
+
+.c-sidebar__list--item a {
+  text-decoration: none;
+}
+
+.c-sidebar__list--item a:hover {
+  color: var(--clr-accent-one-100);
 }
 
 /* Toggle class for hamburger icon */
@@ -133,7 +141,7 @@
      ---------------------------------------- */
 
 .l-sidebar {
-  background-color: var(--clr-light);
+  background-color: var(--clr-secondary-100);
 }
 
 /* Remove margin from sidebar */
