@@ -122,6 +122,11 @@
   color: var(--clr-mid-white);
 }
 
+.u-swatch {
+  width: 100%;
+    text-align: center;
+    border: 3px solid var(--clr-mid-dark);
+}
 
 /* 
    Top Navbar Styles
