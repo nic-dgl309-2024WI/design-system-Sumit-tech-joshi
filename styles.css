@@ -1,14 +1,26 @@
 /* Root grayscale colors */
 :root {
+  /* Primary color for text */
   --clr-primary-100: #333333;
   --clr-primary-200: #282626;
   --clr-primary-300: #191919;
-  --clr-primary-400: #000000;             
-  --clr-secondary: #9f9d9d;
-  --clr-accent: #9f9d9d;
-  --clr-light: #e5e3e3;
-  --clr-white: #ffffff;
-  --clr-dark-grey: #324d4f;
+  --clr-primary-400: #000000;  
+/* Secondary color for background */
+  --clr-secondary-100: #f8f1ef;
+  --clr-secondary-200: #e8cec7;
+  --clr-secondary-300: #c6d6cb;
+  --clr-secondary-300: #d2e3d9;
+
+  /* Accent color for attention  */
+  --clr-accent-one-100: #77a75b;
+  --clr-accent-one-200: #bcdea9;
+  --clr-accent-one-300: #c5dcb8;
+  --clr-accent-two-100: #73435a;
+  --clr-accent-two-200: #704153;
+  --clr-accent-two-300: #54313E;
+  --clr-accent-two-400: #38212A;
+  --clr-accent-three-100: #8db8b6;
+  --clr-accent-three-200: #5f9491;
 }
 
 /* CSS Reset */
