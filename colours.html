@@ -7,8 +7,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
     <script src="design-system.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Header section with navigation -->
@@ -22,23 +24,32 @@
         </ul>
       </nav>
       <!-- Hamburger and close icons for mobile menu -->
-      <i class="fa fa-bars " id="hamburger-icon" aria-hidden="true" onclick="handleToggleClick()"></i>
-      <i class="fa fa-times is-show-icon" id="close-icon" aria-hidden="true" onclick="handleToggleClick()"></i>
+      <i
+        class="fa fa-bars"
+        id="hamburger-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
+      <i
+        class="fa fa-times is-show-icon"
+        id="close-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
     </header>
     <!-- Sidebar navigation menu -->
     <nav class="l-sidebar">
-      <ul class="c-sidebar__list--wrapper hide-sidebar-menu " id="sidebar-wrapper">
-        <li class="c-sidebar__list--title">
-          Branding
-        </li>
+      <ul
+        class="c-sidebar__list--wrapper hide-sidebar-menu"
+        id="sidebar-wrapper"
+      >
+        <li class="c-sidebar__list--title">Branding</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Colours</a></li>
           <li class="c-sidebar__list--item"><a href="#">Typography</a></li>
           <li class="c-sidebar__list--item"><a href="#">Logo</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Utilities
-        </li>
+        <li class="c-sidebar__list--title">Utilities</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Spacing</a></li>
           <li class="c-sidebar__list--item"><a href="#">Containers</a></li>
@@ -46,26 +57,20 @@
           <li class="c-sidebar__list--item"><a href="#">Interactive</a></li>
           <li class="c-sidebar__list--item"><a href="#">Feedback</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Navigation
-        </li>
+        <li class="c-sidebar__list--title">Navigation</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Navbars</a></li>
           <li class="c-sidebar__list--item"><a href="#">Breadcrumbs</a></li>
           <li class="c-sidebar__list--item"><a href="#">Pagination</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Blocks
-        </li>
+        <li class="c-sidebar__list--title">Blocks</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Hero</a></li>
           <li class="c-sidebar__list--item"><a href="#">Carousel</a></li>
           <li class="c-sidebar__list--item"><a href="#">Slats</a></li>
           <li class="c-sidebar__list--item"><a href="#">Footer</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Components
-        </li>
+        <li class="c-sidebar__list--title">Components</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Cards</a></li>
           <li class="c-sidebar__list--item"><a href="#">Forms</a></li>
@@ -75,13 +80,15 @@
       </ul>
     </nav>
     <section>
-      <h2 class="u-text__primary--light">Gray Scale color background : Used for Content Area</h2>
+      <h2 class="u-text__primary--light">
+        Gray Scale color background : Used for Content Area
+      </h2>
       <table class="u-swatch u-bg__secondary--lightest">
         <tr>
           <th class="u-text__primary--light">Colour</th>
           <th class="u-text__primary--light">Hex Code</th>
-          <th class="u-text__primary--light">Normal text	</th>
-          <th class="u-text__primary--light">Large text	</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
         </tr>
         <tr>
           <td>Dark black</td>
@@ -108,13 +115,13 @@
           <th class="u-white">Fail</th>
         </tr>
       </table>
-  
-      <table class=" u-swatch u-bg__secondary--light">
+
+      <table class="u-swatch u-bg__secondary--light">
         <tr>
           <th class="u-text__primary--light">Colour</th>
           <th class="u-text__primary--light">Hex Code</th>
-          <th class="u-text__primary--light">Normal text	</th>
-          <th class="u-text__primary--light">Large text	</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
         </tr>
         <tr>
           <td>Dark black</td>
@@ -140,15 +147,14 @@
           <td class="u-white">Fail</td>
           <th class="u-white">Fail</th>
         </tr>
-      </tr>
       </table>
 
-      <table class=" u-swatch u-bg__secondary--dark">
+      <table class="u-swatch u-bg__secondary--dark">
         <tr>
           <th class="u-text__primary--light">Colour</th>
           <th class="u-text__primary--light">Hex Code</th>
-          <th class="u-text__primary--light">Normal text	</th>
-          <th class="u-text__primary--light">Large text	</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
         </tr>
         <tr>
           <td>Dark black</td>
@@ -174,274 +180,268 @@
           <td class="u-white">Fail</td>
           <th class="u-white">Fail</th>
         </tr>
-      </tr>
       </table>
-    <h2 class="u-text__primary--light">Accent color background: Used for button, links, article background</h2>
-    <table class="u-swatch u-accent-bg__green--light">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#282626</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#333333</td>
-        <td class="u-text__primary--mid">Pass</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#333333</td>
-        <td class="u-text__primary--light">Pass</td>
-        <th class="u-text__primary--light">Pass</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Pass</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </table>
+      <h2 class="u-text__primary--light">
+        Accent color background: Used for button, links, article background
+      </h2>
+      <table class="u-swatch u-accent-bg__green--light">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#282626</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#333333</td>
+          <td class="u-text__primary--mid">Pass</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#333333</td>
+          <td class="u-text__primary--light">Pass</td>
+          <th class="u-text__primary--light">Pass</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Pass</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
 
-    <table class=" u-swatch u-accent-bg__green--mid">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Pass</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Pass</td>
-        <th class="u-text__primary--light">Pass</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Fail</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </tr>
-    </table>
+      <table class="u-swatch u-accent-bg__green--mid">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Pass</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Pass</td>
+          <th class="u-text__primary--light">Pass</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Fail</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
 
-    <table class=" u-swatch u-accent-bg__green--dark">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Pass</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Pass</td>
-        <th class="u-text__primary--light">Pass</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Fail</td>
-        <th class="u-white">Fail</th>
-      </tr>
-    </tr>
-    </table>
-    <table class=" u-swatch u-accent-bg__purple--light">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Fail</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Fail</td>
-        <th class="u-text__primary--light">Fail</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Pass</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </tr>
-    </table>
-    <table class=" u-swatch u-accent-bg__purple--mid">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Fail</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Fail</td>
-        <th class="u-text__primary--light">Fail</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Pass</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </tr>
-    </table>
-    <table class=" u-swatch u-accent-bg__purple--dark">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Fail</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Fail</td>
-        <th class="u-text__primary--mid">Fail</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Fail</td>
-        <th class="u-text__primary--light">Fail</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Pass</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </tr>
-    </table>
-    <table class=" u-swatch u-accent-bg__blue--light">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Pass</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Pass</td>
-        <th class="u-text__primary--light">Pass</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Pass</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </tr>
-    </table>
-    <table class=" u-swatch u-accent-bg__blue--mid">
-      <tr>
-        <th class="u-text__primary--light">Colour</th>
-        <th class="u-text__primary--light">Hex Code</th>
-        <th class="u-text__primary--light">Normal text	</th>
-        <th class="u-text__primary--light">Large text	</th>
-      </tr>
-      <tr>
-        <td>Dark black</td>
-        <td class="u-text__primary--dark">#333333</td>
-        <td class="u-text__primary--dark">Pass</td>
-        <th class="u-text__primary--dark">Pass</th>
-      </tr>
-      <tr>
-        <td>Mid black</td>
-        <td class="u-text__primary--mid">#282626</td>
-        <td class="u-text__primary--mid">Pass</td>
-        <th class="u-text__primary--mid">Pass</th>
-      </tr>
-      <tr>
-        <td>Light black</td>
-        <td class="u-text__primary--light">#191919</td>
-        <td class="u-text__primary--light">Pass</td>
-        <th class="u-text__primary--light">Pass</th>
-      </tr>
-      <tr>
-        <td class="u-white">White</td>
-        <td class="u-white">#ffffff</td>
-        <td class="u-white">Pass</td>
-        <th class="u-white">Pass</th>
-      </tr>
-    </tr>
-    </table>
+      <table class="u-swatch u-accent-bg__green--dark">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Pass</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Pass</td>
+          <th class="u-text__primary--light">Pass</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Fail</td>
+          <th class="u-white">Fail</th>
+        </tr>
+      </table>
+      <table class="u-swatch u-accent-bg__purple--light">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Fail</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Fail</td>
+          <th class="u-text__primary--light">Fail</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Pass</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
+      <table class="u-swatch u-accent-bg__purple--mid">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Fail</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Fail</td>
+          <th class="u-text__primary--light">Fail</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Pass</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
+      <table class="u-swatch u-accent-bg__purple--dark">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Fail</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Fail</td>
+          <th class="u-text__primary--mid">Fail</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Fail</td>
+          <th class="u-text__primary--light">Fail</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Pass</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
+      <table class="u-swatch u-accent-bg__blue--light">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Pass</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Pass</td>
+          <th class="u-text__primary--light">Pass</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Pass</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
+      <table class="u-swatch u-accent-bg__blue--mid">
+        <tr>
+          <th class="u-text__primary--light">Colour</th>
+          <th class="u-text__primary--light">Hex Code</th>
+          <th class="u-text__primary--light">Normal text</th>
+          <th class="u-text__primary--light">Large text</th>
+        </tr>
+        <tr>
+          <td>Dark black</td>
+          <td class="u-text__primary--dark">#333333</td>
+          <td class="u-text__primary--dark">Pass</td>
+          <th class="u-text__primary--dark">Pass</th>
+        </tr>
+        <tr>
+          <td>Mid black</td>
+          <td class="u-text__primary--mid">#282626</td>
+          <td class="u-text__primary--mid">Pass</td>
+          <th class="u-text__primary--mid">Pass</th>
+        </tr>
+        <tr>
+          <td>Light black</td>
+          <td class="u-text__primary--light">#191919</td>
+          <td class="u-text__primary--light">Pass</td>
+          <th class="u-text__primary--light">Pass</th>
+        </tr>
+        <tr>
+          <td class="u-white">White</td>
+          <td class="u-white">#ffffff</td>
+          <td class="u-white">Pass</td>
+          <th class="u-white">Pass</th>
+        </tr>
+      </table>
     </section>
   </body>
 </html>
