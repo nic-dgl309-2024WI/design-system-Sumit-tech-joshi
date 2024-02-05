@@ -4,7 +4,7 @@
   --clr-primary-100: #333333;
   --clr-primary-200: #282626;
   --clr-primary-300: #191919;
-  --clr-primary-400: #000000;  
+  
 /* Secondary color for background */
   --clr-secondary-100: #f8f1ef;
   --clr-secondary-200: #e8cec7;
@@ -21,6 +21,12 @@
   --clr-accent-two-400: #38212A;
   --clr-accent-three-100: #8db8b6;
   --clr-accent-three-200: #5f9491;
+
+  /* Addtional color */
+  --clr-dark: #000000;
+  --clr-white: #ffffff;
+  --clr-mid-black: #484646;
+  --clr-mid-white: #ebe4e4;
 }
 
 /* CSS Reset */
