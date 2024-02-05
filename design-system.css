@@ -2,7 +2,7 @@
  ----------------------------------------
  */
 
- /* Primary Text Colors */
+/* Primary Text Colors */
 .u-text__primary--light {
   color: var(--clr-primary-100);
 }
@@ -124,8 +124,8 @@
 
 .u-swatch {
   width: 100%;
-    text-align: center;
-    border: 3px solid var(--clr-mid-dark);
+  text-align: center;
+  border: 3px solid var(--clr-mid-dark);
 }
 
 /* 
