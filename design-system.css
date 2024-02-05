@@ -69,6 +69,23 @@
   color: var(--clr-accent-three-200);
 }
 
+/* Additional Colors */
+
+.u-dark {
+  color: var(--clr-dark);
+}
+
+.u-white {
+  color: var(--clr-white);
+}
+
+.u-dark__mid {
+  color: var(--clr-mid-dark);
+}
+.u-white__mid {
+  color: var(--clr-mid-white);
+}
+
 
 /* 
    Top Navbar Styles
