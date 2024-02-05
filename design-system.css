@@ -17,19 +17,19 @@
 
 /* Secondary Background Colors */
 .u-bg__secondary--lightest {
-  color: var(--clr-secondary-100);
+  background-color: var(--clr-secondary-100);
 }
 
 .u-bg__secondary--light {
-  color: var(--clr-secondary-200);
+  background-color: var(--clr-secondary-200);
 }
 
 .u-bg__secondary--mid {
-  color: var(--clr-secondary-300);
+  background-color: var(--clr-secondary-300);
 }
 
 .u-bg__secondary--dark {
-  color: var(--clr-secondary-400);
+  background-color: var(--clr-secondary-400);
 }
 
 /* Accent Colors for Attention */
@@ -67,6 +67,42 @@
 
 .u-accent__blue--mid {
   color: var(--clr-accent-three-200);
+}
+
+.u-accent-bg__green--light {
+  background-color: var(--clr-accent-one-100);
+}
+
+.u-accent-bg__green--mid {
+  background-color: var(--clr-accent-one-200);
+}
+
+.u-accent-bg__green--dark {
+  background-color: var(--clr-accent-one-300);
+}
+
+.u-accent-bg__purple--light {
+  background-color: var(--clr-accent-two-100);
+}
+
+.u-accent-bg__purple--mid {
+  background-color: var(--clr-accent-two-200);
+}
+
+.u-accent-bg__purple--dark {
+  background-color: var(--clr-accent-two-300);
+}
+
+.u-accent-bg__green--darkest {
+  background-color: var(--clr-accent-two-400);
+}
+
+.u-accent-bg__blue--light {
+  background-color: var(--clr-accent-three-100);
+}
+
+.u-accent-bg__blue--mid {
+  background-color: var(--clr-accent-three-200);
 }
 
 /* Additional Colors */
