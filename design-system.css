@@ -1,3 +1,35 @@
+/* Utility clsses  
+ ----------------------------------------
+ */
+
+.u-text__primary--100 {
+  color: var(--clr-primary-100);
+}
+
+.u-text__primary--200 {
+  color: var(--clr-primary-200);
+}
+
+.u-text__primary--300 {
+  color: var(--clr-primary-300);
+}
+
+.u-text__secondary--100 {
+  color: var(--clr-secondary-100);
+}
+
+.u-text__secondary--200 {
+  color: var(--clr-secondary-200);
+}
+
+.u-text__secondary--300 {
+  color: var(--clr-secondary-300);
+}
+
+.u-text__secondary--400 {
+  color: var(--clr-secondary-400);
+}
+
 /* 
    Top Navbar Styles
    ----------------------------------------
