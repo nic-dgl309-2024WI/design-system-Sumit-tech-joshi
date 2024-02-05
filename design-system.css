@@ -32,6 +32,44 @@
   color: var(--clr-secondary-400);
 }
 
+/* Accent Colors for Attention */
+.u-accent__green--light {
+  color: var(--clr-accent-one-100);
+}
+
+.u-accent__green--mid {
+  color: var(--clr-accent-one-200);
+}
+
+.u-accent__green--dark {
+  color: var(--clr-accent-one-300);
+}
+
+.u-accent__purple--light {
+  color: var(--clr-accent-two-100);
+}
+
+.u-accent__purple--mid {
+  color: var(--clr-accent-two-200);
+}
+
+.u-accent__purple--dark {
+  color: var(--clr-accent-two-300);
+}
+
+.u-accent__green--darkest {
+  color: var(--clr-accent-two-400);
+}
+
+.u-accent__blue--light {
+  color: var(--clr-accent-three-100);
+}
+
+.u-accent__blue--mid {
+  color: var(--clr-accent-three-200);
+}
+
+
 /* 
    Top Navbar Styles
    ----------------------------------------
