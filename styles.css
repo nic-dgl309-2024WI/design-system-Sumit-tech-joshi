@@ -1,6 +1,9 @@
 /* Root grayscale colors */
 :root {
-  --clr-primary: #000000;
+  --clr-primary-100: #333333;
+  --clr-primary-200: #282626;
+  --clr-primary-300: #191919;
+  --clr-primary-400: #000000;             
   --clr-secondary: #9f9d9d;
   --clr-accent: #9f9d9d;
   --clr-light: #e5e3e3;
