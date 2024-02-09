@@ -7,14 +7,18 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
     <script src="design-system.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Header section with navigation -->
     <header class="l-header">
       <nav class="l-header__navbar">
-        <h1>Design System</h1>
+        <h1 class="u-fs__800 u-ff__montserrat-serif u-uppercase">
+          Design System
+        </h1>
         <!-- Navigation bar with page links -->
         <ul class="l-header__list hide-sidebar-menu" id="nav-link-wrapper">
           <li><a href="about-me.html">About Me</a></li>
@@ -22,23 +26,32 @@
         </ul>
       </nav>
       <!-- Hamburger and close icons for mobile menu -->
-      <i class="fa fa-bars " id="hamburger-icon" aria-hidden="true" onclick="handleToggleClick()"></i>
-      <i class="fa fa-times is-show-icon" id="close-icon" aria-hidden="true" onclick="handleToggleClick()"></i>
+      <i
+        class="fa fa-bars"
+        id="hamburger-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
+      <i
+        class="fa fa-times is-show-icon"
+        id="close-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
     </header>
     <!-- Sidebar navigation menu -->
     <nav class="l-sidebar">
-      <ul class="c-sidebar__list--wrapper hide-sidebar-menu " id="sidebar-wrapper">
-        <li class="c-sidebar__list--title">
-          Branding
-        </li>
+      <ul
+        class="c-sidebar__list--wrapper hide-sidebar-menu"
+        id="sidebar-wrapper"
+      >
+        <li class="c-sidebar__list--title u-fw__bold">Branding</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Colours</a></li>
           <li class="c-sidebar__list--item"><a href="#">Typography</a></li>
           <li class="c-sidebar__list--item"><a href="#">Logo</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Utilities
-        </li>
+        <li class="c-sidebar__list--title u-fw__bold">Utilities</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Spacing</a></li>
           <li class="c-sidebar__list--item"><a href="#">Containers</a></li>
@@ -46,26 +59,20 @@
           <li class="c-sidebar__list--item"><a href="#">Interactive</a></li>
           <li class="c-sidebar__list--item"><a href="#">Feedback</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Navigation
-        </li>
+        <li class="c-sidebar__list--title u-fw__bold">Navigation</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Navbars</a></li>
           <li class="c-sidebar__list--item"><a href="#">Breadcrumbs</a></li>
           <li class="c-sidebar__list--item"><a href="#">Pagination</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Blocks
-        </li>
+        <li class="c-sidebar__list--title u-fw__bold">Blocks</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Hero</a></li>
           <li class="c-sidebar__list--item"><a href="#">Carousel</a></li>
           <li class="c-sidebar__list--item"><a href="#">Slats</a></li>
           <li class="c-sidebar__list--item"><a href="#">Footer</a></li>
         </ul>
-        <li class="c-sidebar__list--title">
-          Components
-        </li>
+        <li class="c-sidebar__list--title u-fw__bold">Components</li>
         <ul class="c-sidebar__list">
           <li class="c-sidebar__list--item"><a href="#">Cards</a></li>
           <li class="c-sidebar__list--item"><a href="#">Forms</a></li>
