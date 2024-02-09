@@ -47,6 +47,18 @@
   --fw-mid: 400;
   --fw-bold: 600;
   --fw-boldest: 800;
+
+  /* Line Height */
+  --lh-highest: 5px;
+  --lh-high: 3.5px;
+  --lh-mid: 2.7px;
+  --lh-low: 2px;
+  --lh-lowest: 1.5px;
+
+  /* Letter spacing */
+  --ls-high: 4.5px;
+  --ls-mid: 3px;
+  --ls-low: 2.3px;
 }
 
 /* Font size as per screen size */
