@@ -49,16 +49,16 @@
   --fw-boldest: 800;
 
   /* Line Height */
-  --lh-highest: 5px;
-  --lh-high: 3.5px;
-  --lh-mid: 2.7px;
-  --lh-low: 2px;
-  --lh-lowest: 1.5px;
+  --lh-highest: 20px;
+  --lh-high: 19px;
+  --lh-mid: 18px;
+  --lh-low: 16.6px;
+  --lh-lowest: 16px;
 
   /* Letter spacing */
-  --ls-high: 4.5px;
-  --ls-mid: 3px;
-  --ls-low: 2.3px;
+  --ls-high: 1px;
+  --ls-mid: 0.5px;
+  --ls-low: 0.2px;
 }
 
 /* Font size as per screen size */
@@ -105,6 +105,11 @@ p,
 figure,
 picture {
   margin: 0;
+}
+
+body {
+  font-family: var(--ff-lato-serif);
+  letter-spacing: var(--ls-low);
 }
 
 /* Remove padding from lists */
