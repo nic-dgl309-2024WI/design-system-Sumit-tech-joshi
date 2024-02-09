@@ -202,6 +202,15 @@
   line-height: var(ls-low);
 }
 
+/* Text case utilities */
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
 /* 
    Top Navbar Styles
    ----------------------------------------
