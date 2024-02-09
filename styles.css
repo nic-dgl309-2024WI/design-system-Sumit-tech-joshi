@@ -4,8 +4,8 @@
   --clr-primary-100: #333333;
   --clr-primary-200: #282626;
   --clr-primary-300: #191919;
-  
-/* Secondary color for background */
+
+  /* Secondary color for background */
   --clr-secondary-100: #f8f1ef;
   --clr-secondary-200: #e8cec7;
   --clr-secondary-300: #c6d6cb;
@@ -17,8 +17,8 @@
   --clr-accent-one-300: #c5dcb8;
   --clr-accent-two-100: #73435a;
   --clr-accent-two-200: #704153;
-  --clr-accent-two-300: #54313E;
-  --clr-accent-two-400: #38212A;
+  --clr-accent-two-300: #54313e;
+  --clr-accent-two-400: #38212a;
   --clr-accent-three-100: #8db8b6;
   --clr-accent-three-200: #5f9491;
 
@@ -27,7 +27,6 @@
   --clr-white: #ffffff;
   --clr-mid-black: #484646;
   --clr-mid-white: #d2dddb;
-
 
   /* Font sizes */
   --fs-900: 6rem;
@@ -39,10 +38,34 @@
   --fs-200: 0.8rem;
   --fs-100: 0.5rem;
 
-
   /* Font families*/
   --ff-montserrat-serif: "Montserrat", sans-serif;
   --ff-lato-serif: "Lato", sans-serif;
+}
+
+/* Font size as per screen size */
+@media (min-width: 35em) {
+  :root {
+    --fs-900: 6.5rem;
+    --fs-800: 4.5rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2.7rem;
+    --fs-500: 1.3rem;
+    --fs-300: 1rem;
+  }
+}
+
+@media (min-width: 45em) {
+  :root {
+    --fs-900: 7rem;
+    --fs-800: 5rem;
+    --fs-700: 4rem;
+    --fs-600: 3.5rem;
+    --fs-500: 2.5rem;
+    --fs-300: 1rem;
+    --fs-200: 1.5rem;
+    --fs-100: 0.5rem;
+  }
 }
 
 /* CSS Reset */
