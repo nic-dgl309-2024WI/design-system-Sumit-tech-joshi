@@ -38,6 +38,11 @@
   --fs-300: 1rem;
   --fs-200: 0.8rem;
   --fs-100: 0.5rem;
+
+
+  /* Font families*/
+  --ff-montserrat-serif: "Montserrat", sans-serif;
+  --ff-lato-serif: "Lato", sans-serif;
 }
 
 /* CSS Reset */
