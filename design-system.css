@@ -189,6 +189,23 @@
   line-height: var(--lh-lowest);
 }
 
+/* Font weights */
+.u-fw__lightest {
+  font-weight: var(--fw-lightest);
+}
+
+.u-fw__mid {
+  font-weight: var(--fw-mid);
+}
+
+.u-fw__bold {
+  font-weight: var(--fw-bold);
+}
+
+.u-fw__boldest {
+  font-weight: var(--fw-boldest);
+}
+
 /* Letter spacing */
 .u-ls__high {
   line-height: var(ls-high);
