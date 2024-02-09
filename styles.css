@@ -41,6 +41,12 @@
   /* Font families*/
   --ff-montserrat-serif: "Montserrat", sans-serif;
   --ff-lato-serif: "Lato", sans-serif;
+
+  /* Font weights */
+  --fw-lightest: 200;
+  --fw-mid: 400;
+  --fw-bold: 600;
+  --fw-boldest: 800;
 }
 
 /* Font size as per screen size */
