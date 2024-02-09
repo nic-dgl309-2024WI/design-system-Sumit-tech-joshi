@@ -172,6 +172,36 @@
   font-size: var(--fs-100);
 }
 
+/* Line Height */
+.u-lh__highest {
+  line-height: var(--lh-highest);
+}
+
+.u-lh__high {
+  line-height: var(--lh-high);
+}
+
+.u-lh__low {
+  line-height: var(--lh-low);
+}
+
+.u-lh__lowest {
+  line-height: var(--lh-lowest);
+}
+
+/* Letter spacing */
+.u-ls__high {
+  line-height: var(ls-high);
+}
+
+.u-ls__mid {
+  line-height: var(ls-mid);
+}
+
+.u-ls__low {
+  line-height: var(ls-low);
+}
+
 /* 
    Top Navbar Styles
    ----------------------------------------
