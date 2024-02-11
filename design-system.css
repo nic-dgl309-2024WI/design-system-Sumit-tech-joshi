@@ -160,6 +160,10 @@
   font-size: var(--fs-500);
 }
 
+.u-fs__400 {
+  font-size: var(--fs-400);
+}
+
 .u-fs__300 {
   font-size: var(--fs-300);
 }
