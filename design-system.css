@@ -266,6 +266,7 @@
 
 .c-sidebar__list--item a:hover {
   color: var(--clr-accent-one-100);
+  font-size: var(--fs-400);
 }
 
 /* Toggle class for hamburger icon */
@@ -292,6 +293,14 @@
 /* Add top padding to sidebar title */
 .c-sidebar__list--title {
   padding: 10px 0px;
+}
+
+/* Typography style */
+
+.c-typography__table th,td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
 
 /* ==Media Queries for desktops, 1200px and up) == */
