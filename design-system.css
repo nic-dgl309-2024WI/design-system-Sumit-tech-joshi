@@ -208,15 +208,15 @@
 
 /* Letter spacing */
 .u-ls__high {
-  line-height: var(ls-high);
+  letter-spacing: var(--ls-high);
 }
 
 .u-ls__mid {
-  line-height: var(ls-mid);
+  letter-spacing: var(--ls-mid);
 }
 
 .u-ls__low {
-  line-height: var(ls-low);
+  letter-spacing: var(--ls-low);
 }
 
 /* Text case utilities */
