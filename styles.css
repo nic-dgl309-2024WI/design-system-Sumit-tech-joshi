@@ -25,7 +25,7 @@
   /* Addtional color */
   --clr-dark: #000000;
   --clr-white: #ffffff;
-  --clr-mid-black: #484646;
+  --clr-mid-dark: #484646;
   --clr-mid-white: #d2dddb;
 
   /* Font sizes */
@@ -224,6 +224,10 @@ ol {
 
 .u-accent-bg__blue--mid {
   background-color: var(--clr-accent-three-200);
+}
+
+.u-bg__mid-black {
+  background-color: var(--clr-mid-dark);
 }
 
 /* Additional Colors */
