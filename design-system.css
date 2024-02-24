@@ -4,24 +4,24 @@
 */
 
 /* Flex container for the top navbar */
-.l-header {
+.c-header {
   display: flex;
   justify-content: space-between;
   background-color: var(--clr-secondary-100);
 }
 
 /* Navbar link set text decoration to none */
-.l-header__navbar a {
+.c-header__navbar a {
   text-decoration: none;
 }
 
 /* Navbar icon padding to 5px */
-.l-header i {
+.c-header i {
   padding: 5px;
 }
 
 /* Navbar link hover effect */
-.l-header__navbar a:hover {
+.c-header__navbar a:hover {
   color: var(--clr-accent-one-100);
 }
 
@@ -86,19 +86,19 @@
   }
 
   /* Add gap between header items */
-  .l-header__navbar {
+  .c-header__navbar {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
 
   /* Set list style none to header */
-  .l-header__navbar li {
+  .c-header__navbar li {
     list-style: none;
   }
 
   /* Display nav list as flex */
-  .l-header__list {
+  .c-header__list {
     display: flex;
     gap: 10px;
   }
