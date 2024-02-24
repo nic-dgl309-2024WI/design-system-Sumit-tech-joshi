@@ -30,11 +30,11 @@
   color: var(--clr-mid-dark);
 }
 
-.c-sidebar__list--item a {
+.c-sidebar__list-item a {
   text-decoration: none;
 }
 
-.c-sidebar__list--item a:hover {
+.c-sidebar__list-item a:hover {
   color: var(--clr-accent-one-100);
   font-size: var(--fs-400);
 }
