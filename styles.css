@@ -356,3 +356,7 @@ ol {
 .u-capitalize {
   text-transform: capitalize;
 }
+
+.u-display__fliex {
+ display: flex;
+}
