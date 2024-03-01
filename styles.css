@@ -586,3 +586,55 @@ ol {
 .l-pt-4 {
   padding-top: 4rem;
 }
+
+/* Padding Bottoms */
+.l-pb-05 {
+  padding-bottom: 0.5rem;
+}
+.l-pb-1 {
+  padding-bottom: 1rem;
+}
+.l-pb-15 {
+  padding-bottom: 1.5rem;
+}
+.l-pb-2 {
+  padding-bottom: 2rem;
+}
+.l-pb-25 {
+  padding-bottom: 2.5rem;
+}
+.l-pb-3 {
+  padding-bottom: 3rem;
+}
+.l-pb-35 {
+  padding-bottom: 3.5rem;
+}
+.l-pb-4 {
+  padding-bottom: 4rem;
+}
+
+/* Padding Lefts */
+.l-pl-05 {
+  padding-left: 0.5rem;
+}
+.l-pl-1 {
+  padding-left: 1rem;
+}
+.l-pl-15 {
+  padding-left: 1.5rem;
+}
+.l-pl-2 {
+  padding-left: 2rem;
+}
+.l-pl-25 {
+  padding-left: 2.5rem;
+}
+.l-pl-3 {
+  padding-left: 3rem;
+}
+.l-pl-35 {
+  padding-left: 3.5rem;
+}
+.l-pl-4 {
+  padding-left: 4rem;
+}
