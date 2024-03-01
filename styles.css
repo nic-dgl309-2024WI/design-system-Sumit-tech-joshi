@@ -357,6 +357,58 @@ ol {
   text-transform: capitalize;
 }
 
-.u-display__fliex {
- display: flex;
+/* ---------- SPACING UTILITY CLASSES -------------- */
+
+/* ===== Margin Utility Classes ===== */
+
+/* Margins */
+.l-m-05 {
+  margin: 0.5rem;
+}
+.l-m-1 {
+  margin: 1rem;
+}
+.l-m-15 {
+  margin: 1.5rem;
+}
+.l-m-2 {
+  margin: 2rem;
+}
+.l-m-25 {
+  margin: 2.5rem;
+}
+.l-m-3 {
+  margin: 3rem;
+}
+.l-m-35 {
+  margin: 3.5rem;
+}
+.l-m-4 {
+  margin: 4rem;
+}
+
+/* Margin Tops */
+.l-mt-05 {
+  margin-top: 0.5rem;
+}
+.l-mt-1 {
+  margin-top: 1rem;
+}
+.l-mt-15 {
+  margin-top: 1.5rem;
+}
+.l-mt-2 {
+  margin-top: 2rem;
+}
+.l-mt-25 {
+  margin-top: 2.5rem;
+}
+.l-mt-3 {
+  margin-top: 3rem;
+}
+.l-mt-35 {
+  margin-top: 3.5rem;
+}
+.l-mt-4 {
+  margin-top: 4rem;
 }
