@@ -464,3 +464,71 @@ ol {
 .l-mr-4 {
   margin-right: 4rem;
 }
+
+/* Margin Horizontals */
+.l-mx-05 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.l-mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.l-mx-15 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.l-mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.l-mx-25 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.l-mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.l-mx-35 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+.l-mx-4 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+/* Margin Verticals */
+.l-my-05 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.l-my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.l-my-15 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.l-my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.l-my-25 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.l-my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.l-my-35 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+.l-my-4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
