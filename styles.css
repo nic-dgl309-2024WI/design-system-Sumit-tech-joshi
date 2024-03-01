@@ -532,3 +532,57 @@ ol {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+
+/* ===== Padding Utility Classes ===== */
+
+/* Padding */
+.l-p-05 {
+  padding: 0.5rem;
+}
+.l-p-1 {
+  padding: 1rem;
+}
+.l-p-15 {
+  padding: 1.5rem;
+}
+.l-p-2 {
+  padding: 2rem;
+}
+.l-p-25 {
+  padding: 2.5rem;
+}
+.l-p-3 {
+  padding: 3rem;
+}
+.l-p-35 {
+  padding: 3.5rem;
+}
+.l-p-4 {
+  padding: 4rem;
+}
+
+/* Padding Tops */
+.l-pt-05 {
+  padding-top: 0.5rem;
+}
+.l-pt-1 {
+  padding-top: 1rem;
+}
+.l-pt-15 {
+  padding-top: 1.5rem;
+}
+.l-pt-2 {
+  padding-top: 2rem;
+}
+.l-pt-25 {
+  padding-top: 2.5rem;
+}
+.l-pt-3 {
+  padding-top: 3rem;
+}
+.l-pt-35 {
+  padding-top: 3.5rem;
+}
+.l-pt-4 {
+  padding-top: 4rem;
+}
