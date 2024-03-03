@@ -732,3 +732,112 @@ ol {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+/* ===== Base Layout Classes===== */
+
+/* --- Flex ----*/
+/* Display Flex */
+.l-flex {
+  display: flex;
+}
+
+/* Flex Direction */
+.l-flex__row {
+  flex-direction: row;
+}
+
+.l-flex__column {
+  flex-direction: column;
+}
+
+.l-flex__column-reverse {
+  flex-direction: column-reverse;
+}
+
+.l-flex__row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Flex Wrap */
+.l-flex__wrap {
+  flex-wrap: wrap;
+}
+
+.l-flex__nowrap {
+  flex-wrap: nowrap;
+}
+
+.l-flex__wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Justify Content */
+.l-flex__justify-start {
+  justify-content: flex-start;
+}
+
+.l-flex__justify-end {
+  justify-content: flex-end;
+}
+
+.l-flex__justify-center {
+  justify-content: center;
+}
+
+.l-flex__justify-space-between {
+  justify-content: space-between;
+}
+
+.l-flex__justify-space-around {
+  justify-content: space-around;
+}
+
+.l-flex__justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+.l-flex__align-start {
+  align-items: flex-start;
+}
+
+.l-flex__align-end {
+  align-items: flex-end;
+}
+
+.l-flex__align-center {
+  align-items: center;
+}
+
+.l-flex__align-baseline {
+  align-items: baseline;
+}
+
+.l-flex__align-stretch {
+  align-items: stretch;
+}
+
+/* Align Content */
+.l-flex__align-content-start {
+  align-content: flex-start;
+}
+
+.l-flex__align-content-end {
+  align-content: flex-end;
+}
+
+.l-flex__align-content-center {
+  align-content: center;
+}
+
+.l-flex__align-content-space-between {
+  align-content: space-between;
+}
+
+.l-flex__align-content-space-around {
+  align-content: space-around;
+}
+
+.l-flex__align-content-stretch {
+  align-content: stretch;
+}
