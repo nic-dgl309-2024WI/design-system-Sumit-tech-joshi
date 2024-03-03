@@ -929,3 +929,63 @@ ol {
 .l-grid__auto-cols {
   grid-auto-columns: minmax(100px, auto);
 }
+
+/* ===== Container Classes ===== */
+
+/* Max Width  */
+.l-max-width {
+  max-width: 100%;
+}
+
+/* Full Width - 100% of container */
+.l-full-width {
+  width: 100%;
+}
+
+/* Min Content Width */
+.l-width__min-content {
+  width: min-content;
+}
+
+/* Max Content Width */
+.l-width__max-content {
+  width: max-content;
+}
+
+/* Full Height - 100% viewport height */
+.l-full-height {
+  min-height: 100%;
+}
+
+/* Hide Element */
+.u-hide {
+  display: none;
+}
+
+/* Show Element */
+.u-show {
+  display: block;
+}
+
+/* Overflow Hidden */
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+/* Cursor Pointer */
+.u-cursor-pointer {
+  cursor: pointer;
+}
+
+/* Prevent from overscrolling */
+.u-overscroll-behavior__none {
+  overscroll-behavior: none;
+}
+
+@media (min-width: 768px) {
+  /* ===== Container Classes ===== */
+  .l-max-width-desktop {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+  }
+}
