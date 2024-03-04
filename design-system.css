@@ -27,7 +27,7 @@
 
 /* Active page link */
 .is-active-page {
-  color: var(--clr-mid-dark);
+  color: var(--clr-accent-two-100);
 }
 
 .c-sidebar__list-item a {
@@ -133,6 +133,11 @@ td {
   }
 
   .c-spacing__mobile--margin {
+    margin-left: 10rem;
     margin-top: 0;
+  }
+
+  .c-spacing__margin--padding {
+    display: flex;
   }
 }
