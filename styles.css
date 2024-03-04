@@ -63,20 +63,10 @@
 }
 
 /* Font size as per screen size */
-@media (min-width: 35em) {
-  :root {
-    --fs-900: 6.5rem;
-    --fs-800: 4.5rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2.7rem;
-    --fs-500: 1.3rem;
-    --fs-300: 1rem;
-  }
-}
-
-@media (min-width: 45em) {
+@media (min-width: 768px) {
   :root {
     --fs-900: 7rem;
+    --fs-850: 6rem;
     --fs-800: 5rem;
     --fs-700: 4rem;
     --fs-600: 3.5rem;
@@ -92,7 +82,6 @@
 /* Border Box Fix */
 * {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 /* Reset margin */
@@ -599,6 +588,19 @@ ol {
 .l-pt-8 {
   padding-top: 8rem;
 }
+.l-pt-10 {
+  padding-top: 10rem;
+}
+.l-pt-12 {
+  padding-top: 12rem;
+}
+.l-pt-14 {
+  padding-top: 14rem;
+}
+
+.l-pt-header {
+  padding-top: 14rem;
+}
 
 /* Padding Bottoms */
 .l-pb-05 {
@@ -1044,5 +1046,9 @@ ol {
   .l-max-width-desktop {
     max-width: 1200px;
     margin: 0 auto; /* Center the container */
+  }
+
+  .l-pt-header {
+    padding-top: 7rem;
   }
 }
