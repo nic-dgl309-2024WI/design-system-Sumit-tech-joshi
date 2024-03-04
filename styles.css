@@ -947,29 +947,38 @@ ol {
 
 /* ===== Container Classes ===== */
 
-/* Max Width  */
+/* Max Width Classes */
 .l-max-width {
   max-width: 100%;
 }
 
-/* Full Width - 100% of container */
+.l-max-width__800 {
+  max-width: 800px;
+}
+
+.l-max-width__1200 {
+  max-width: 1200px;
+}
+
+.l-max-width__1600 {
+  max-width: 1600px;
+}
+
+/* Full Width Classes */
 .l-full-width {
   width: 100%;
 }
 
-/* Min Content Width */
-.l-width__min-content {
-  width: min-content;
+.l-full-width__vw {
+  width: 100vw;
 }
 
-/* Max Content Width */
-.l-width__max-content {
-  width: max-content;
+.l-full-width__50 {
+  width: 50%;
 }
 
-/* Full Height - 100% viewport height */
-.l-full-height {
-  min-height: 100%;
+.l-full-width__75 {
+  width: 75%;
 }
 
 /* ---- Position ------ */
@@ -1034,6 +1043,14 @@ ol {
 /* Cursor Pointer */
 .u-cursor-pointer {
   cursor: pointer;
+}
+
+.c-container__visual-example {
+ background-color: var(--clr-accent-one-200);
+}
+
+.c-container__visual-example--item {
+  
 }
 
 /* Prevent from overscrolling */
