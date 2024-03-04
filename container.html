@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Header section with navigation -->
-    <header class="c-header l-position-fixed l-full-width">
+    <header class="c-header l-position-fixed l-full-width l-z-index-4">
       <nav class="c-header__navbar">
         <h1 class="u-fs__800 u-ff__montserrat-serif u-uppercase">
           Design System
@@ -50,7 +50,7 @@
     </header>
     <!-- Sidebar navigation menu -->
     <div class="l-flex u-bg__secondary--lightest">
-      <nav class="l-sidebar l-pt-header">
+      <nav class="l-sidebar l-pt-header l-position-fixed">
         <ul
           class="c-sidebar__list--wrapper hide-sidebar-menu"
           id="sidebar-wrapper"
@@ -104,8 +104,8 @@
         </ul>
       </nav>
 
-      <section>
-        <section class="l-pt-header l-flex">
+      <section class="l-mx-auto">
+        <section class="l-pt-header l-flex l-grid__gap-4">
           <!-- Flex Classes -->
           <section>
             <h3>Flex Classes</h3>
@@ -310,7 +310,7 @@
             </table>
           </section>
         </section>
-        <section class="l-pt-header l-flex">
+        <section class="l-pt-header l-flex l-flex__justify-space-evenly">
           <!-- Max Width Classes -->
           <section>
             <h3>Max Width Classes</h3>

@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Header section with navigation -->
-    <header class="c-header l-position-fixed l-full-width">
+    <header class="c-header l-position-fixed l-full-width l-z-index-4">
       <nav class="c-header__navbar">
         <h1 class="u-fs__800 u-ff__montserrat-serif u-uppercase">
           Design System
@@ -50,7 +50,7 @@
     </header>
     <!-- Sidebar navigation menu -->
     <div class="l-flex u-bg__secondary--lightest">
-      <nav class="l-sidebar l-pt-header">
+      <nav class="l-sidebar l-pt-header l-position-fixed">
         <ul
           class="c-sidebar__list--wrapper hide-sidebar-menu"
           id="sidebar-wrapper"
@@ -64,13 +64,19 @@
               <a href="./typography.html">Typography</a>
             </li>
             <li class="c-sidebar__list-item">
-              <a href="./index.html"  href="#">Logo</a>
+              <a href="./index.html" href="#">Logo</a>
             </li>
           </ul>
           <li class="c-sidebar__list--title u-fw__bold">Utilities</li>
           <ul class="c-sidebar__list">
-            <li class="c-sidebar__list-item"><a class="is-active-page u-fw__bold" href="./spacing.html">Spacing</a></li>
-            <li class="c-sidebar__list-item"><a href="./container.html">Containers</a></li>
+            <li class="c-sidebar__list-item">
+              <a class="is-active-page u-fw__bold" href="./spacing.html"
+                >Spacing</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a href="./container.html">Containers</a>
+            </li>
             <li class="c-sidebar__list-item"><a href="#">Images</a></li>
             <li class="c-sidebar__list-item"><a href="#">Interactive</a></li>
             <li class="c-sidebar__list-item"><a href="#">Feedback</a></li>
@@ -98,7 +104,7 @@
         </ul>
       </nav>
 
-      <section class="l-pt-header c-spacing__margin--padding">
+      <section class="l-pt-header c-spacing__margin--padding l-mx-auto l-max-width__1200 l-grid__gap-4">
         <section>
           <!-- Margin Classes -->
           <h3>Margin Classes</h3>
@@ -301,7 +307,7 @@
             </tr>
           </table>
         </section>
-        <section class="c-spacing__mobile--margin">
+        <section>
           <h3>Padding Classes</h3>
           <table>
             <tr>
@@ -565,7 +571,6 @@
               <td>padding-top: 4rem; padding-bottom: 4rem;</td>
             </tr>
           </table>
-          </div>
         </section>
       </section>
     </div>
