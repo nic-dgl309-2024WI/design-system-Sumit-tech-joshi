@@ -73,6 +73,14 @@
   text-align: left;
 }
 
+.c-colour__hidden-section {
+  display: none;
+}
+
+.c-colour__min-width {
+  width: min-content;
+}
+
 /* ==Media Queries for desktops, 1200px and up) == */
 @media only screen and (min-width: 1200px) {
   #hamburger-icon,
@@ -101,5 +109,13 @@
   .c-header__list {
     display: flex;
     gap: 10px;
+  }
+
+  .c-colour__hidden-section {
+    display: inline-block;
+  }
+
+  .c-colour__min-width {
+    width: auto;
   }
 }
