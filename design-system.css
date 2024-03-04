@@ -67,10 +67,15 @@
 
 /* Typography style */
 
-.c-typography__table th,td {
+.c-typography__table th,
+td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
+}
+
+.c-typography__hidden-section {
+  display: none;
 }
 
 .c-colour__hidden-section {
@@ -112,7 +117,11 @@
   }
 
   .c-colour__hidden-section {
-    display: inline-block;
+    display: table-cell;
+  }
+
+  .c-typography__hidden-section {
+    display: table-cell;
   }
 
   .c-colour__min-width {
