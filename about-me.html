@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="design-system.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -16,36 +18,136 @@
     />
   </head>
   <body>
-    <!-- add your name -->
-    <h1>Hi! My name is Sumit Joshi.</h1>
-    <h2>I am a full stack developer.</h2>
-    <!-- add your portrait photo -->
-    <img
-      src="images/sumit-image.png"
-      alt="Sumit profile image"
-      style="width: 500px; height: 500px"
-    />
-    <!-- add a short biography. Include where you are from, your education background, your current program, and something interesting about yourself. -->
-    <p>
-      Greetings! I hail from the vibrant land of India. Currently, I am immersed
-      in the world of Digital Design for Mobile Applications. My programming
-      prowess revolves around JavaScript, and I bring a wealth of experience in
-      developing websites using cutting-edge technologies like React JS and Node
-      JS.
-    </p>
-    <!-- add a list of your favourite web development tools. -->
-    <p>My favourite tools are</p>
-    <ul>
-      <li>VS code</li>
-      <li>Github</li>
-      <li>Official documentation</li>
-    </ul>
-    <!-- add a list of your strongest web development skills. -->
-    <p>My skills include</p>
-    <ul>
-      <li>React JS</li>
-      <li>Node JS</li>
-      <li>Nest JS</li>
-    </ul>
+    <!-- Header section with navigation -->
+    <header class="c-header l-position-fixed l-full-width l-z-index-4">
+      <nav class="c-header__navbar">
+        <h1 class="u-fs__800 u-ff__montserrat-serif u-uppercase">
+          Design System
+        </h1>
+        <!-- Navigation bar with page links -->
+        <ul class="c-header__list hide-sidebar-menu" id="nav-link-wrapper">
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="#" class="is-active-page">Demo Site</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger and close icons for mobile menu -->
+      <i
+        class="fa fa-bars"
+        id="hamburger-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
+      <i
+        class="fa fa-times is-show-icon"
+        id="close-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
+    </header>
+    <div class="l-flex u-bg__secondary--lightest">
+      <!-- Sidebar navigation menu -->
+      <nav class="l-sidebar l-pt-header l-position-fixed">
+        <ul
+          class="c-sidebar__list--wrapper hide-sidebar-menu"
+          id="sidebar-wrapper"
+        >
+          <li class="c-sidebar__list--title u-fw__bold">Branding</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a href="./colours.html">Colours</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="is-active-page u-fw__bold" href="./typography.html"
+                >Typography</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a href="./index.html" href="#">Logo</a>
+            </li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Utilities</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a href="./spacing.html">Spacing</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a href="./container.html">Containers</a>
+            </li>
+            <li class="c-sidebar__list-item"><a href="#">Images</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Interactive</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Feedback</a></li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Navigation</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item"><a href="#">Navbars</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Breadcrumbs</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Pagination</a></li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Blocks</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item"><a href="#">Hero</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Carousel</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Slats</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Footer</a></li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Components</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item"><a href="#">Cards</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Forms</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Accordion</a></li>
+            <li class="c-sidebar__list-item"><a href="#">Lists</a></li>
+          </ul>
+        </ul>
+      </nav>
+      <!-- Typography section -->
+      <section class="l-pt-header l-mx-auto l-max-width__1200">
+        <!-- add your name -->
+        <h2
+          class="l-pt-2 u-ff__montserrat-serif u-fs__600 u-text__primary--light u-capitalize"
+        >
+          Hi! My name is Sumit Joshi.
+        </h2>
+        <h3
+          class="l-pt-2 u-ff__montserrat-serif u-fs__500 u-text__primary--light u-text__primary--light u-capitalize"
+        >
+          i am a full stack developer.
+        </h3>
+        <!-- add your portrait photo -->
+        <img
+          src="images/sumit-image.jpg"
+          alt="Sumit profile image"
+          class="l-full-width"
+        />
+        <!-- add a short biography. Include where you are from, your education background, your current program, and something interesting about yourself. -->
+        <p class="l-max-width__800 l-pt-2">
+          Greetings! I hail from the vibrant land of India. Currently, I am
+          immersed in the world of Digital Design for Mobile Applications. My
+          programming prowess revolves around JavaScript, and I bring a wealth
+          of experience in developing websites using cutting-edge technologies
+          like React JS and Node JS.
+        </p>
+        <section class="l-flex l-flex__justify-space-evenly l-pt-2">
+          <!-- add a list of your favourite web development tools. -->
+          <div >
+            <h4>My favourite tools are</h4>
+            <ul>
+              <li>VS code</li>
+              <li>Github</li>
+              <li>Official documentation</li>
+            </ul>
+          </div>
+
+          <!-- add a list of your strongest web development skills. -->
+          <div>
+            <h4>My skills include</h4>
+            <ul>
+              <li>React JS</li>
+              <li>Node JS</li>
+              <li>Nest JS</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </div>
   </body>
 </html>
