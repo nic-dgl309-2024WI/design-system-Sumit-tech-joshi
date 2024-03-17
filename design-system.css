@@ -129,7 +129,7 @@ td {
   }
 
   .c-colour__min-width {
-    width: auto;
+    width: 100%;
   }
 
   .c-spacing__mobile--margin {

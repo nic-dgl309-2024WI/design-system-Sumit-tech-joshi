@@ -126,6 +126,19 @@ ol {
   color: var(--clr-primary-300);
 }
 
+/* Primary Background Colors */
+.u-bg__primary--light {
+  background-color: var(--clr-primary-100);
+}
+
+.u-bg__primary--mid {
+  background-color: var(--clr-primary-200);
+}
+
+.u-bg__primary--dark {
+  background-color: var(--clr-primary-300);
+}
+
 /* Secondary Background Colors */
 .u-bg__secondary--lightest {
   background-color: var(--clr-secondary-100);
