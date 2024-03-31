@@ -229,7 +229,6 @@ ol {
   background-color: var(--clr-accent-three-200);
 }
 
-
 .u-bg__white {
   background-color: var(--clr-white);
 }
@@ -1034,6 +1033,24 @@ ol {
   width: 75%;
 }
 
+/* Full Height Classes */
+.l-full-height {
+  height: 100%;
+}
+
+.l-full-height__50 {
+  height: 50%;
+}
+
+.l-full-height__75 {
+  height: 75%;
+}
+
+.l-full-height__100-vh {
+  height: 100vh;
+}
+
+
 /* ---- Position ------ */
 
 /* Fixed Position */
@@ -1107,6 +1124,72 @@ ol {
 .u-body__container {
   margin: 0 auto;
   width: 100%;
+}
+
+/* Index page style */
+
+/* -------- Header ----------*/
+
+/* Flex container for the top navbar */
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-secondary-100);
+}
+
+/* Navbar link set text decoration to none */
+.c-header__navbar a {
+  text-decoration: none;
+}
+
+/* Navbar icon padding to 5px */
+.c-header i {
+  padding: 5px;
+}
+
+/* Navbar link hover effect */
+.c-header__navbar a:hover {
+  color: var(--clr-accent-one-100);
+}
+
+/* Active page link */
+.is-active-page {
+  color: var(--clr-accent-two-100);
+}
+
+.c-sidebar__list-item a {
+  text-decoration: none;
+}
+
+.c-sidebar__list-item a:hover {
+  color: var(--clr-accent-one-100);
+  font-size: var(--fs-400);
+}
+
+/* Toggle class for hamburger icon */
+.is-show-icon {
+  display: none !important;
+}
+
+.hide-top-menu {
+  display: none !important;
+}
+
+/* Initially hide sidebar menu */
+.hide-sidebar-menu {
+  display: none;
+}
+
+/* Logo style*/
+.c-header__logo {
+  width: 17%;
+}
+
+/* Header style */
+
+.c-header__navbar ul {
+  list-style: none;
 }
 
 @media (min-width: 768px) {

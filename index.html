@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo site</title>
+    <title>Outback Nursery</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="design-system.css" />
+
     <script src="design-system.js"></script>
     <link
       rel="stylesheet"
@@ -20,5 +22,67 @@
       rel="stylesheet"
     />
   </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header class="c-header l-position-fixed l-full-width l-z-index-4">
+      <nav class="c-header__navbar">
+        <image
+          class="c-header__logo"
+          src="./images/logo.png"
+          alt="Logo image"
+        ></image>
+        <!-- Navigation bar with page links -->
+        <ul
+          class="c-header__list hide-top-menu l-flex l-flex__column l-flex__align-center l-position-absolute l-full-height__100-vh u-capitalize l-full-width"
+          id="nav-link-wrapper"
+        >
+          <li class="is-active-page u-fw__bold l-p-3">
+            <a
+              href="./index.html"
+              class="is-active-page"
+              >plants</a
+            >
+          </li>
+          <li class="is-active-page u-fw__bold l-p-3">
+            <a
+              href="./index.html"
+              class="is-active-page"
+              >services</a
+            >
+          </li>
+          <li class="is-active-page u-fw__bold l-p-3">
+            <a
+              href="./index.html"
+              class="is-active-page"
+              >resourses</a
+            >
+          </li>
+          <li class="is-active-page u-fw__bold l-p-3">
+            <a
+              href="./index.html"
+              class="is-active-page"
+              >about us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger and close icons for mobile menu -->
+      <i
+        class="fa fa-bars"
+        id="hamburger-icon"
+        aria-hidden="true"
+        onclick="handleToggleHomeClick()"
+      ></i>
+      <i
+        class="fa fa-times is-show-icon"
+        id="close-icon"
+        aria-hidden="true"
+        onclick="handleToggleHomeClick()"
+      ></i>
+    </header>
 
+
+
+    
+  </body>
 </html>

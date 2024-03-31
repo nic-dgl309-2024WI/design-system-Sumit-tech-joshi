@@ -3,18 +3,6 @@
    ----------------------------------------
 */
 
-/* Flex container for the top navbar */
-.c-header {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--clr-secondary-100);
-}
-
-/* Navbar link set text decoration to none */
-.c-header__navbar a {
-  text-decoration: none;
-}
-
 /* Navbar icon padding to 5px */
 .c-header i {
   padding: 5px;
