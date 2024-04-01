@@ -1143,6 +1143,11 @@ ol {
   width: 100%;
 }
 
+/* transparent color */
+.u-bg__transparent-green {
+  background-color: rgba(119, 167, 91, 0.9);
+}
+
 /* Index page style */
 
 /* -------- Header ----------*/
