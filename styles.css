@@ -29,13 +29,13 @@
   --clr-mid-white: #d2dddb;
 
   /* Font sizes */
-  --fs-900: 6rem;
-  --fs-800: 4rem;
+  --fs-900: 4.5rem;
+  --fs-800: 3.5rem;
   --fs-700: 3rem;
   --fs-600: 2.5rem;
-  --fs-500: 1.5rem;
-  --fs-400: 1.2rem;
-  --fs-300: 1rem;
+  --fs-500: 2.0rem;
+  --fs-400: 1.6rem;
+  --fs-300: 1.2rem;
   --fs-200: 0.8rem;
   --fs-100: 0.5rem;
 
@@ -71,9 +71,9 @@
     --fs-700: 4rem;
     --fs-600: 3.5rem;
     --fs-500: 2.5rem;
-    --fs-300: 1rem;
+    --fs-300: 2rem;
     --fs-200: 1.5rem;
-    --fs-100: 0.5rem;
+    --fs-100: 1rem;
   }
 }
 
@@ -1142,6 +1142,15 @@ ol {
   width: 100%;
 }
 
+.u-btn__green {
+  background-color: var(--clr-accent-one-100);
+  color: var(--clr-white);
+  padding: 10px;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: 600;
+}
+
 /* transparent color */
 .u-bg__transparent-green {
   background-color: rgba(119, 167, 91, 0.9);
@@ -1218,6 +1227,15 @@ ol {
   text-align: center;
 }
 
+.c-top-banner {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  padding-bottom: 12rem;
+}
+
 @media (min-width: 768px) {
   /* ===== Container Classes ===== */
   .l-max-width-desktop {
@@ -1258,5 +1276,10 @@ ol {
 
   .c-header__list a {
     color: var(--clr-mid-dark);
+  }
+
+  /* Hero card style */
+  .c-top-banner h1 {
+    font-size: var(--fs-900);
   }
 }
