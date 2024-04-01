@@ -110,6 +110,18 @@ ol {
   padding: 0;
 }
 
+/* Styles images for all section */
+img {
+  width: 100%;
+}
+
+/* List styles */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Utility clsses  
  ----------------------------------------
  */
@@ -1188,6 +1200,14 @@ ol {
   padding: 0 8%;
 }
 
+.u-center__vertical {
+  margin: auto 0;
+}
+
+.u-center__horizontal {
+  margin: 0 auto;
+}
+
 /* Index page style */
 
 /* -------- Header ----------*/
@@ -1269,11 +1289,6 @@ ol {
   padding-bottom: 12rem;
 }
 
-/* Styles for Our Story section */
-.c-our-story__section img {
-  width: 100%;
-}
-
 /* Styles for Plant Section component */
 .c-plant__section {
   overflow-x: auto;
@@ -1295,6 +1310,28 @@ ol {
 .c-plant__section img {
   max-height: 200px;
 }
+
+/* Gift certificate steps */
+
+.c-service__section ol li:before {
+  content: '\2022'; /* Bullet character */
+  color: #77a75b; /* Custom color for bullet */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Link styles */
+.c-service__section ol  {
+  text-align: left;
+}
+
+.c-service__section ol a {
+  color: var(--clr-accent-one-100); /* Custom link color */
+  text-decoration: underline;
+}
+
 
 @media (min-width: 768px) {
   /* Desktop-specific styles */
@@ -1360,6 +1397,20 @@ ol {
     width: 45%;
   }
 
+  /* Service Section */
+  .c-service__section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .c-service__section--text {
+    width: 45%;
+  }
+
+  .c-service__section img {
+    width: 45%;
+  }
+
   /* Plant Section */
   .c-plant__section {
     flex-wrap: wrap;
@@ -1371,5 +1422,13 @@ ol {
     width: 21%;
     overflow-x: visible;
     margin-right: 20px;
+  }
+
+  .c-service__section--gift {
+    flex-direction: column;
+  }
+
+  .c-service__section--wrapper {
+    flex-direction: row;
   }
 }
