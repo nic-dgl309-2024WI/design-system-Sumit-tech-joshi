@@ -1253,12 +1253,13 @@ ol {
 .c-header__navbar ul {
   list-style: none;
 }
-
+/* Styles for Notice Board component */
 .c-notice-board {
   padding: 10px;
   text-align: center;
 }
 
+/* Styles for Top Banner component */
 .c-top-banner {
   background-attachment: fixed;
   background-size: cover;
@@ -1268,10 +1269,12 @@ ol {
   padding-bottom: 12rem;
 }
 
+/* Styles for Our Story section */
 .c-our-story__section img {
   width: 100%;
 }
 
+/* Styles for Plant Section component */
 .c-plant__section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -1294,7 +1297,9 @@ ol {
 }
 
 @media (min-width: 768px) {
-  /* ===== Container Classes ===== */
+  /* Desktop-specific styles */
+
+  /* Container Classes */
   .l-max-width-desktop {
     max-width: 1200px;
   }
@@ -1308,6 +1313,7 @@ ol {
     padding-top: 7rem;
   }
 
+  /* Header Styles */
   .c-header__logo {
     width: 80px;
   }
@@ -1340,6 +1346,7 @@ ol {
     font-size: var(--fs-900);
   }
 
+  /* Our Story Section */
   .c-our-story__section {
     flex-direction: row;
     justify-content: space-between;
@@ -1353,11 +1360,11 @@ ol {
     width: 45%;
   }
 
+  /* Plant Section */
   .c-plant__section {
     flex-wrap: wrap;
     scroll-snap-type: none;
     justify-content: center;
-
   }
 
   .c-plant__section article {
