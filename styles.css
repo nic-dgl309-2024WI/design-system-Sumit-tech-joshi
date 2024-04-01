@@ -1050,7 +1050,6 @@ ol {
   height: 100vh;
 }
 
-
 /* ---- Position ------ */
 
 /* Fixed Position */
@@ -1214,6 +1213,11 @@ ol {
   list-style: none;
 }
 
+.c-notice-board {
+  padding: 10px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   /* ===== Container Classes ===== */
   .l-max-width-desktop {
@@ -1227,5 +1231,32 @@ ol {
 
   .u-pt-header {
     padding-top: 7rem;
+  }
+
+  .c-header__logo {
+    width: 80px;
+  }
+
+  .c-header {
+    padding: 0 8%;
+  }
+
+  .c-header__list {
+    display: flex !important;
+    flex-direction: row;
+    background-color: var(--clr-secondary-100);
+    height: auto;
+    gap: 0;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .c-header__list li {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .c-header__list a {
+    color: var(--clr-mid-dark);
   }
 }
