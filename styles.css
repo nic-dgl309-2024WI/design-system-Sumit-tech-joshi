@@ -1544,4 +1544,10 @@ textarea {
   .c-contact-us__section--wrapper {
     flex-direction: row;
   }
+
+  /* Footer CSS */
+.c-footer_text {
+  flex-direction: row;
+  justify-content: space-around;
+}
 }

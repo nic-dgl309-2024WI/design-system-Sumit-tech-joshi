@@ -537,17 +537,18 @@
       </section>
 
       <!-- Contact us section -->
-      <section class="c-contact-us__section--wrapper u-text__center u-side_padding l-flex l-flex__column l-flex__justify-space-between u-accent-bg__blue--mid">
+      <section
+        class="c-contact-us__section--wrapper u-text__center u-side_padding l-flex l-flex__column l-flex__justify-space-between u-accent-bg__blue--mid"
+      >
         <div
           class="c-contact-us__section l-flex l-flex__align-center l-flex__column"
         >
           <h3 class="u-fs__300 l-mb-2 l-mt-3">Contact our Foundation</h3>
+          <p class="l-mb-2"><strong>Email:</strong> info@outbacknursery.ca</p>
           <p class="l-mb-2">
-            <strong>Email:</strong> info@outbacknursery.ca
-            </p>
-            <p class="l-mb-2">
-            <strong>Contact Address:</strong> 6016 Headquarters Rd, Courtenay, British Columbia, V9J 1M7, Canada
-        </p>
+            <strong>Contact Address:</strong> 6016 Headquarters Rd, Courtenay,
+            British Columbia, V9J 1M7, Canada
+          </p>
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.807370234845!2d-125.05341972348377!3d49.75206817146727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712028201217!5m2!1sen!2sca"
@@ -561,28 +562,84 @@
           </div>
         </div>
 
-
         <div
           class="c-contact-us__section l-flex l-flex__align-center l-flex__column"
         >
           <h3 class="u-fs__300 l-mb-2 l-mt-3">We are here to help!</h3>
 
-          <form class="c-contact-us__section--form-container l-p-3 l-mb-2" action="#" method="post">
-            <label class=" u-fw__bold " for="name">Your Name:</label>
-            <input class="l-mt-1 l-mb-2" type="text" id="name" name="name" required />
-            <label class=" u-fw__bold " for="email">Your Email:</label>
-            <input class="l-mt-1 l-mb-2" type="email" id="email" name="email" required />
-            <label class=" u-fw__bold " for="phone">Your Phone:</label>
-            <input class="l-mt-1 l-mb-2" type="text" id="phone" name="phone" required />
-            <label class=" u-fw__bold " for="message">Your Message:</label>
-            <textarea class="l-mt-1 l-mb-2"  id="message" name="message" rows="4" required></textarea>
-            <input class=" l-mt-1 l-mb-2 l-px-2 l-py-1 u-fs__100" type="submit" value="Submit" />
+          <form
+            class="c-contact-us__section--form-container l-p-3 l-mb-2"
+            action="#"
+            method="post"
+          >
+            <label class="u-fw__bold" for="name">Your Name:</label>
+            <input
+              class="l-mt-1 l-mb-2"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <label class="u-fw__bold" for="email">Your Email:</label>
+            <input
+              class="l-mt-1 l-mb-2"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label class="u-fw__bold" for="phone">Your Phone:</label>
+            <input
+              class="l-mt-1 l-mb-2"
+              type="text"
+              id="phone"
+              name="phone"
+              required
+            />
+            <label class="u-fw__bold" for="message">Your Message:</label>
+            <textarea
+              class="l-mt-1 l-mb-2"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+            <input
+              class="l-mt-1 l-mb-2 l-px-2 l-py-1 u-fs__100"
+              type="submit"
+              value="Submit"
+            />
           </form>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="u-accent-bg__green--darkest u-white">
+      <div class="c-footer_text l-flex l-flex__column l-flex__align-center">
+        <image
+          class="c-header__logo"
+          src="./images/logo.png"
+          alt="Logo image"
+        />
 
+        <div class="c-social__icons l-flex l-flex__justify-space-around">
+          <image class="l-mt-1 l-mx-2" src="./images/fb_icon.png" />
+          <image class="l-mt-1 l-mx-2" src="./images/insta_icon.png" />
+          <image class="l-mt-1 l-mx-2" src="./images/twitter_icon.png" />
+        </div>
+
+        <div class="l-flex l-flex__column l-flex__align-center l-pt-2">
+          <h4>Current Hours</h4>
+          <p class="l-pt-1">Monday - Saturday</p>
+          <p class="l-pt-1">8:00 am - 6:00 pm</p>
+          <p class="l-pt-1">Sundays + Holidays</p>
+          <p class="l-pt-1">9:00 am - 5:30 pm</p>
+        </div>
+
+      </div>
+      <div class="l-pt-2 l-pb-1 l-px-1 u-text__center">
+        This is a fictional website, None of the content and images were
+        approved by the business owner. © Copyright 2024
+      </div>
     </footer>
   </body>
 </html>
