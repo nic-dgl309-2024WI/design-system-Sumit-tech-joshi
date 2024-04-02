@@ -1392,6 +1392,48 @@ ol {
   width: 50px !important;
 }
 
+.c-contact-us__section--form-container {
+  width: 100%;
+  border: 1px solid var(--clr-mid-dark);
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Style for input fields */
+.c-contact-us__section--form-container input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: 1px solid var(--clr-accent-one-100);
+    border-radius: 5px;
+    box-sizing: border-box;
+    min-height: 2.5rem;
+}
+
+/* Style for submit button */
+.c-contact-us__section--form-container input[type="submit"] {
+    background-color: var(--clr-accent-two-100);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.c-contact-us__section--form-container input[type="submit"]:hover {
+    background-color: var(--clr-accent-two-400);
+}
+
+.c-contact-us__section p {
+  max-width: 30%;
+}
+
+.c-contact-us__section iframe {
+  max-width: calc(100% - 5px);
+  border: 2px solid var(--clr-accent-two-100) !important;
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) {
   /* Desktop-specific styles */
 
@@ -1492,6 +1534,14 @@ ol {
   }
 
   .c-service__section--wrapper {
+    flex-direction: row;
+  }
+
+  .c-contact-us__section {
+    width: 45%;
+  }
+
+  .c-contact-us__section--wrapper {
     flex-direction: row;
   }
 }
