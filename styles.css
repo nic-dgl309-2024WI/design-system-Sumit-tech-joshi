@@ -116,7 +116,8 @@ img {
 }
 
 /* List styles */
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1314,7 +1315,7 @@ ul, ol {
 /* Gift certificate steps */
 
 .c-service__section ol li:before {
-  content: '\2022'; /* Bullet character */
+  content: "\2022"; /* Bullet character */
   color: #77a75b; /* Custom color for bullet */
   font-weight: bold;
   display: inline-block;
@@ -1323,7 +1324,7 @@ ul, ol {
 }
 
 /* Link styles */
-.c-service__section ol  {
+.c-service__section ol {
   text-align: left;
 }
 
@@ -1332,6 +1333,33 @@ ul, ol {
   text-decoration: underline;
 }
 
+.c-our-pepople__section {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+}
+
+.c-our-pepople__section article {
+  position: relative;
+  border: 5px solid var(--clr-mid-dark);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.c-our-pepople__section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#c-our-pepople__section_page-2 {
+  display: none;
+}
 
 @media (min-width: 768px) {
   /* Desktop-specific styles */
