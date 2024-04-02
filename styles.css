@@ -1227,6 +1227,18 @@ ol {
   background-color: var(--clr-secondary-100);
 }
 
+ /* Add gap between header items */
+ .c-header__navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Set list style none to header */
+.c-header__navbar li {
+  list-style: none;
+}
+
 /* Navbar link set text decoration to none */
 .c-header__navbar a {
   text-decoration: none;
@@ -1442,6 +1454,11 @@ textarea {
 
 @media (min-width: 768px) {
   /* Desktop-specific styles */
+
+  #hamburger-icon,
+  #close-icon {
+    display: none;
+  }
 
   /* Container Classes */
   .l-max-width-desktop {
