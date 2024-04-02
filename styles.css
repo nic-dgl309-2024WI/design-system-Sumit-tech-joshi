@@ -1173,6 +1173,7 @@ ol {
   width: 70%;
   font-size: 1.4rem;
   width: auto;
+  cursor: pointer;
 }
 
 .u-btn__product {
@@ -1184,6 +1185,7 @@ ol {
   width: 70%;
   font-weight: 400;
   width: auto;
+  cursor: pointer;
 }
 
 /* transparent color */
