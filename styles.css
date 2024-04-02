@@ -1361,6 +1361,10 @@ ol {
   display: none;
 }
 
+.c-social__icons img {
+  width: 50px !important;
+}
+
 @media (min-width: 768px) {
   /* Desktop-specific styles */
 
@@ -1425,17 +1429,21 @@ ol {
     width: 45%;
   }
 
-  /* Service Section */
-  .c-service__section {
+  /* Service and social Section */
+  .c-service__section, .c-social__section {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .c-service__section--text {
+  .c-service__section--text, .c-service__section--text{
     width: 45%;
   }
 
   .c-service__section img {
+    width: 45%;
+  }
+
+  .c-social__section img {
     width: 45%;
   }
 
@@ -1452,7 +1460,7 @@ ol {
     margin-right: 20px;
   }
 
-  .c-service__section--gift {
+  .c-service__section--gift .c-social__section {
     flex-direction: column;
   }
 
