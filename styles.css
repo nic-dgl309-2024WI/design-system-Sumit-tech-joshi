@@ -1333,13 +1333,13 @@ ol {
   text-decoration: underline;
 }
 
-.c-our-pepople__section {
+.c-our-people__section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 
 }
 
-.c-our-pepople__section article {
+.c-our-people__section article {
   position: relative;
   border: 5px solid var(--clr-mid-dark);
   border-radius: 10px;
@@ -1347,7 +1347,7 @@ ol {
   padding-top: 30px;
 }
 
-.c-our-pepople__section img {
+.c-our-people__section img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -1357,7 +1357,34 @@ ol {
   transform: translateX(-50%);
 }
 
-#c-our-pepople__section_page-2 {
+.c-our-testimonial__section {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.c-our-testimonial__section article {
+  position: relative;
+  border: 5px solid var(--clr-mid-dark);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.c-our-testimonial__section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#c-our-people__section_page-2 {
+  display: none;
+}
+
+#c-our-testimonial__section_page-2 {
   display: none;
 }
 
