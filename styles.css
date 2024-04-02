@@ -1203,6 +1203,10 @@ ol {
   padding: 0 8%;
 }
 
+.u-side_margin {
+  margin: 0 8%;
+}
+
 .u-center__vertical {
   margin: auto 0;
 }
