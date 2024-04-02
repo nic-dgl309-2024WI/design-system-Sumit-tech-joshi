@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outback Nursery</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="design-system.css" />
+
+    <script src="design-system.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header
+      class="c-header l-position-sticky l-top-0 l-full-width l-z-index-4a l-full-width l-z-index-4"
+    >
+      <nav class="c-header__navbar">
+        <image
+          class="c-header__logo"
+          src="./images/logo.png"
+          alt="Logo image"
+        ></image>
+        <!-- Navigation bar with page links -->
+        <ul
+          class="u-bg__transparent-green c-header__list hide-top-menu l-flex l-flex__column l-flex__align-center l-position-absolute l-full-height__100-vh u-capitalize l-full-width"
+          id="nav-link-wrapper"
+        >
+          <li class="u-fw__bold l-p-3 u-fs__500">
+            <a class="u-white" href="./index.html">plants</a>
+          </li>
+          <li class="u-fw__bold l-p-3 u-fs__500">
+            <a class="u-white" href="./index.html">services</a>
+          </li>
+          <li class="u-fw__bold l-p-3 u-fs__500">
+            <a class="u-white" href="./index.html">resourses</a>
+          </li>
+          <li class="u-fw__bold l-p-3 u-fs__500">
+            <a class="u-white" href="./index.html">about us</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger and close icons for mobile menu -->
+      <i
+        class="fa fa-bars"
+        id="hamburger-icon"
+        aria-hidden="true"
+        onclick="handleToggleHomeClick()"
+      ></i>
+      <i
+        class="fa fa-times is-show-icon"
+        id="close-icon"
+        aria-hidden="true"
+        onclick="handleToggleHomeClick()"
+      ></i>
+    </header>
+
+    <main class="l-pt-4 l-flex l-flex__justify-center">
+        <img class="l-full-width__50" src="./images/coming_soon.png" alt=" Comming soon">
+    </main>
+  </body>
+</html>
