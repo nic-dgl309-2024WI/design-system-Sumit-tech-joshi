@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo site</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <link rel="stylesheet" type="text/css" href="./design-system.css" />
+    <script src="design-system.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header section with navigation -->
+    <header class="c-header l-position-fixed l-full-width l-z-index-4">
+      <nav class="c-header__navbar">
+        <h1 class="u-fs__800 u-ff__montserrat-serif u-uppercase">
+          Design System
+        </h1>
+        <!-- Navigation bar with page links -->
+        <ul class="c-header__list hide-sidebar-menu" id="nav-link-wrapper">
+          <li><a href="./about-me.html">About Me</a></li>
+          <li>
+            <a
+              class="is-active-page u-fw__bold"
+              href="./index.html"
+              class="is-active-page"
+              >Demo Site</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger and close icons for mobile menu -->
+      <i
+        class="fa fa-bars"
+        id="hamburger-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
+      <i
+        class="fa fa-times is-show-icon"
+        id="close-icon"
+        aria-hidden="true"
+        onclick="handleToggleClick()"
+      ></i>
+    </header>
+    <!-- Sidebar navigation menu -->
+    <nav class="l-sidebar u-pt-header l-position-fixed">
+      <ul
+        class="c-sidebar__list--wrapper hide-sidebar-menu"
+        id="sidebar-wrapper"
+      >
+        <li class="c-sidebar__list--title u-fw__bold">Branding</li>
+        <ul class="c-sidebar__list">
+          <li class="c-sidebar__list-item">
+            <a href="./colours.html">Colours</a>
+          </li>
+          <li class="c-sidebar__list-item">
+            <a href="./typography.html">Typography</a>
+          </li>
+          <li class="c-sidebar__list-item">
+            <a href="./index.html" class="is-active-page" href="#">Logo</a>
+          </li>
+        </ul>
+        <li class="c-sidebar__list--title u-fw__bold">Utilities</li>
+        <ul class="c-sidebar__list">
+          <li class="c-sidebar__list-item">
+            <a href="./spacing.html">Spacing</a>
+          </li>
+          <li class="c-sidebar__list-item">
+            <a href="./container.html">Containers</a>
+          </li>
+          <li class="c-sidebar__list-item"><a href="#">Images</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Interactive</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Feedback</a></li>
+        </ul>
+        <li class="c-sidebar__list--title u-fw__bold">Navigation</li>
+        <ul class="c-sidebar__list">
+          <li class="c-sidebar__list-item"><a href="#">Navbars</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Breadcrumbs</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Pagination</a></li>
+        </ul>
+        <li class="c-sidebar__list--title u-fw__bold">Blocks</li>
+        <ul class="c-sidebar__list">
+          <li class="c-sidebar__list-item"><a href="#">Hero</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Carousel</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Slats</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Footer</a></li>
+        </ul>
+        <li class="c-sidebar__list--title u-fw__bold">Components</li>
+        <ul class="c-sidebar__list">
+          <li class="c-sidebar__list-item"><a href="#">Cards</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Forms</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Accordion</a></li>
+          <li class="c-sidebar__list-item"><a href="#">Lists</a></li>
+        </ul>
+      </ul>
+    </nav>
+
+    <!-- card section -->
+    <div class="u-pt-header u-side_margin c-plant__section">
+      <div class="c-our-testimonial__section--pagination l-p-2">
+        <button
+          class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+          onclick="handleTestimonialPagination(1)"
+        >
+          1
+        </button>
+        <button
+          class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+          onclick="handleTestimonialPagination(2)"
+        >
+          2
+        </button>
+        <button
+          class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+          onclick="handleTestimonialPagination(2)"
+        >
+          3
+        </button>
+        <button
+          class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+          onclick="handleTestimonialPagination(2)"
+        >
+          4
+        </button>
+      </div>
+    </div>
+
+    <section class="u-side_margin l-p-3 c-code-container">
+      <button
+        class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__100 u-btn__green"
+        onclick="copyToClipboard()"
+      >
+        Copy to Clipboard
+      </button>
+
+      <textarea class="l-mt-1" id="htmlCode" readonly>
+        <div class="c-our-testimonial__section--pagination l-p-2">
+            <button
+              class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+              onclick="handleTestimonialPagination(1)"
+            >
+              1
+            </button>
+            <button
+              class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+              onclick="handleTestimonialPagination(2)"
+            >
+              2
+            </button>
+            <button
+              class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+              onclick="handleTestimonialPagination(2)"
+            >
+              3
+            </button>
+            <button
+              class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
+              onclick="handleTestimonialPagination(2)"
+            >
+              4
+            </button>
+          </div> </textarea>
+    </section>
+  </body>
+</html>
