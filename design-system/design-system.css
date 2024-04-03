@@ -82,6 +82,35 @@ td {
   margin-top: 3rem;
 }
 
+/* Breadcrumb styles */
+/* .c-breadcrumb {
+  background-color: var();
+  padding: 10px;
+} */
+
+.c-breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c-breadcrumb ul li {
+  display: inline;
+}
+
+.c-breadcrumb ul li:not(:last-child):after {
+  content: "›"; /* Breadcrumb separator */
+  padding: 0 5px;
+}
+
+.c-breadcrumb ul li a {
+  text-decoration: none;
+}
+
+.c-breadcrumb ul li a:hover {
+  text-decoration: underline;
+}
+
 /* Dark theme for textarea */
 .c-code-container textarea {
   height: 400px;
