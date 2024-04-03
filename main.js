@@ -36,3 +36,9 @@ function handlePagination (pageNumber) {
     pastElement.style.display = "none";
     currentElement.style.display = "flex";
   }
+
+  function handleStepVisibility (step) {
+    document.getElementById(`gift-step-${step}-plus`).classList.toggle(`hide-step-${step}`);
+    document.getElementById(`gift-step-${step}-minus`).classList.toggle(`hide-step-${step}`);
+    document.getElementById(`step-des-${step}`).classList.toggle(`hide-step-${step}`);
+  }

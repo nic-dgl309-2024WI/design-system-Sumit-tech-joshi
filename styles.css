@@ -1227,8 +1227,8 @@ ol {
   background-color: var(--clr-secondary-100);
 }
 
- /* Add gap between header items */
- .c-header__navbar {
+/* Add gap between header items */
+.c-header__navbar {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -1321,7 +1321,7 @@ ol {
 .c-plant__section article {
   padding: 20px;
   margin: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--clr-mid-white);
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
@@ -1338,7 +1338,7 @@ ol {
 
 .c-service__section ol li:before {
   content: "\2022"; /* Bullet character */
-  color: #77a75b; /* Custom color for bullet */
+  color: var(--clr-accent-one-100); /* Custom color for bullet */
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -1358,7 +1358,6 @@ ol {
 .c-our-people__section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-
 }
 
 .c-our-people__section article {
@@ -1426,24 +1425,24 @@ ol {
 .c-contact-us__section--form-container input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    border: 1px solid var(--clr-accent-one-100);
-    border-radius: 5px;
-    box-sizing: border-box;
-    min-height: 2.5rem;
+  width: 100%;
+  border: 1px solid var(--clr-accent-one-100);
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-height: 2.5rem;
 }
 
 /* Style for submit button */
 .c-contact-us__section--form-container input[type="submit"] {
-    background-color: var(--clr-accent-two-100);
-    color: var(--clr-white);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  background-color: var(--clr-accent-two-100);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .c-contact-us__section--form-container input[type="submit"]:hover {
-    background-color: var(--clr-accent-two-400);
+  background-color: var(--clr-accent-two-400);
 }
 
 .c-contact-us__section p {
@@ -1457,8 +1456,14 @@ textarea {
 }
 
 #hamburger-icon-index,
-  #close-icon-index {
-    z-index: 11111;
+#close-icon-index {
+  z-index: 11111;
+}
+
+.hide-step-1,
+.hide-step-2,
+.hide-step-3 {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -1531,12 +1536,14 @@ textarea {
   }
 
   /* Service and social Section */
-  .c-service__section, .c-social__section {
+  .c-service__section,
+  .c-social__section {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .c-service__section--text, .c-service__section--text{
+  .c-service__section--text,
+  .c-service__section--text {
     width: 45%;
   }
 
@@ -1578,8 +1585,8 @@ textarea {
   }
 
   /* Footer CSS */
-.c-footer_text {
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .c-footer_text {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
