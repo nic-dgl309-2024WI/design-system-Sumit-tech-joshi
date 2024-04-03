@@ -124,6 +124,15 @@ td {
   resize: none;
 }
 
+.c-service__section li::before {
+  content: "\2022";
+    color: var(--clr-accent-one-100);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: 1em !important;
+} 
+
 /* ==Media Queries for desktops, 1200px and up) == */
 @media only screen and (min-width: 1200px) {
   #hamburger-icon,
