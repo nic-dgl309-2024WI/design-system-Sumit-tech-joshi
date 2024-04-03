@@ -32,6 +32,10 @@
   display: none !important;
 }
 
+.is-show-icon-index {
+  display: none !important;
+}
+
 /* Initially hide sidebar menu */
 .hide-sidebar-menu {
   display: none;
@@ -95,6 +99,11 @@ td {
 @media only screen and (min-width: 1200px) {
   #hamburger-icon,
   #close-icon {
+    display: none;
+  }
+
+  #hamburger-icon-index,
+  #close-icon-index {
     display: none;
   }
 

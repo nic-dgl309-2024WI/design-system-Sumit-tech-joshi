@@ -1273,6 +1273,10 @@ ol {
   display: none !important;
 }
 
+.is-show-icon-index {
+  display: none !important;
+}
+
 .hide-top-menu {
   display: none !important;
 }
@@ -1452,11 +1456,16 @@ textarea {
   border-radius: 5px;
 }
 
+#hamburger-icon-index,
+  #close-icon-index {
+    z-index: 11111;
+}
+
 @media (min-width: 768px) {
   /* Desktop-specific styles */
 
-  #hamburger-icon,
-  #close-icon {
+  #hamburger-icon-index,
+  #close-icon-index {
     display: none;
   }
 

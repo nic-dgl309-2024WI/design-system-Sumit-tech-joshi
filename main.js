@@ -1,3 +1,9 @@
+// An event listener for toggling the home menu at index page
+function handleToggleIndexClick () {
+  document.getElementById('hamburger-icon-index').classList.toggle("is-show-icon-index");
+  document.getElementById('close-icon-index').classList.toggle("is-show-icon-index");
+  document.getElementById('nav-link-wrapper-index') && document.getElementById('nav-link-wrapper-index').classList.toggle("hide-top-menu");
+}
 
 // Function for pagination
 function handlePagination (pageNumber) {
