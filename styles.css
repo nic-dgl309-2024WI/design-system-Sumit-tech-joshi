@@ -1389,6 +1389,7 @@ ol {
   border-radius: 10px;
   text-align: center;
   padding-top: 30px;
+  min-width: 100%;
 }
 
 .c-our-testimonial__section img {
@@ -1407,6 +1408,10 @@ ol {
 
 #c-our-testimonial__section_page-2 {
   display: none;
+}
+
+.c-our-testimonial__section p {
+  max-width: 20rem;
 }
 
 .c-social__icons img {
@@ -1465,6 +1470,21 @@ textarea {
 .hide-step-3 {
   display: none;
 }
+
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel article {
+  flex: 0 0 auto;
+  transition: transform 0.5s ease;
+}
+
 
 @media (min-width: 768px) {
   /* Desktop-specific styles */
@@ -1588,5 +1608,9 @@ textarea {
   .c-footer_text {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .c-our-testimonial__section article {
+    min-width: auto;
   }
 }
