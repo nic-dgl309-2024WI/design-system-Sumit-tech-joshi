@@ -1355,11 +1355,13 @@ ol {
   text-decoration: underline;
 }
 
+/* Styles for the section containing our people */
 .c-our-people__section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
 
+/* Styles for each individual article in the our people section */
 .c-our-people__section article {
   position: relative;
   border: 5px solid var(--clr-mid-dark);
@@ -1369,6 +1371,7 @@ ol {
   width: 100%;
 }
 
+/* Styles for images within the our people section */
 .c-our-people__section img {
   width: 100px;
   height: 100px;
@@ -1379,11 +1382,13 @@ ol {
   transform: translateX(-50%);
 }
 
+/* Styles for the section containing our testimonials */
 .c-our-testimonial__section {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
 
+/* Styles for each individual article in the our testimonials section */
 .c-our-testimonial__section article {
   position: relative;
   border: 5px solid var(--clr-mid-dark);
@@ -1393,6 +1398,7 @@ ol {
   min-width: 100%;
 }
 
+/* Styles for images within the our testimonials section */
 .c-our-testimonial__section img {
   width: 100px;
   height: 100px;
@@ -1403,22 +1409,27 @@ ol {
   transform: translateX(-50%);
 }
 
+/* Styles for hiding second page of the our people section */
 #c-our-people__section_page-2 {
   display: none;
 }
 
+/* Styles for hiding second page of the our testimonials section */
 #c-our-testimonial__section_page-2 {
   display: none;
 }
 
+/* Styles for paragraphs within the our testimonials section */
 .c-our-testimonial__section p {
   max-width: 20rem;
 }
 
+/* Styles for social icons */
 .c-social__icons img {
   width: 50px !important;
 }
 
+/* Styles for the contact form container */
 .c-contact-us__section--form-container {
   width: 100%;
   border: 1px solid var(--clr-mid-dark);
@@ -1427,7 +1438,7 @@ ol {
   text-align: left;
 }
 
-/* Style for input fields */
+/* Styles for input fields within the contact form */
 .c-contact-us__section--form-container input[type="text"],
 input[type="email"],
 textarea {
@@ -1438,7 +1449,7 @@ textarea {
   min-height: 2.5rem;
 }
 
-/* Style for submit button */
+/* Styles for the submit button within the contact form */
 .c-contact-us__section--form-container input[type="submit"] {
   background-color: var(--clr-accent-two-100);
   color: var(--clr-white);
@@ -1447,49 +1458,56 @@ textarea {
   cursor: pointer;
 }
 
+/* Hover styles for the submit button within the contact form */
 .c-contact-us__section--form-container input[type="submit"]:hover {
   background-color: var(--clr-accent-two-400);
 }
 
+/* Styles for paragraphs within the contact section */
 .c-contact-us__section p {
   max-width: 30%;
 }
 
+/* Styles for iframes within the contact section */
 .c-contact-us__section iframe {
   max-width: calc(100% - 5px);
   border: 2px solid var(--clr-accent-two-100) !important;
   border-radius: 5px;
 }
 
+/* Styles for hamburger and close icons */
 #hamburger-icon-index,
 #close-icon-index {
   z-index: 11111;
 }
 
+/* Styles for hiding certain elements */
 .hide-step-1,
 .hide-step-2,
 .hide-step-3 {
   display: none;
 }
 
+/* Styles for the carousel wrapper */
 .carousel-wrapper {
   overflow: hidden;
   position: relative;
 }
 
+/* Styles for the carousel */
 .carousel {
   display: flex;
 }
 
+/* Styles for individual articles within the carousel */
 .carousel article {
   flex: 0 0 auto;
   transition: transform 0.5s ease;
 }
 
-
+/* Desktop-specific styles */
 @media (min-width: 768px) {
-  /* Desktop-specific styles */
-
+  /* Hamburger and close icons */
   #hamburger-icon-index,
   #close-icon-index {
     display: none;
@@ -1605,17 +1623,21 @@ textarea {
     flex-direction: row;
   }
 
+  /* People Section */
+  .c-our-people__section article {
+    width: auto;
+  }
+
   /* Footer CSS */
   .c-footer_text {
     flex-direction: row;
     justify-content: space-around;
   }
 
+  /* Testimonial Section */
   .c-our-testimonial__section article {
     min-width: auto;
-  }
-
-  .c-our-people__section article {
-    width: auto;
+    /* width: 400px;
+    height: 400px; */
   }
 }
