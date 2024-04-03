@@ -7,7 +7,6 @@ function handleToggleIndexClick () {
 
 // Function for pagination
 function handlePagination (pageNumber) {
-  debugger
     let currentElement, pastElement;
     if(pageNumber === 1) {
       currentElement = document.getElementById(`c-our-people__section_page-${pageNumber}`);
