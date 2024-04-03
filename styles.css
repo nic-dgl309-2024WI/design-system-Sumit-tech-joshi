@@ -1366,6 +1366,7 @@ ol {
   border-radius: 10px;
   text-align: center;
   padding-top: 30px;
+  width: 100%;
 }
 
 .c-our-people__section img {
@@ -1612,5 +1613,9 @@ textarea {
 
   .c-our-testimonial__section article {
     min-width: auto;
+  }
+
+  .c-our-people__section article {
+    width: auto;
   }
 }

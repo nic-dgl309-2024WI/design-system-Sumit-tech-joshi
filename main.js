@@ -7,14 +7,15 @@ function handleToggleIndexClick () {
 
 // Function for pagination
 function handlePagination (pageNumber) {
+  debugger
     let currentElement, pastElement;
     if(pageNumber === 1) {
-      currentElement = document.getElementById(`c-our-pepople__section_page-${pageNumber}`);
-      pastElement = document.getElementById(`c-our-pepople__section_page-2`);
+      currentElement = document.getElementById(`c-our-people__section_page-${pageNumber}`);
+      pastElement = document.getElementById(`c-our-people__section_page-2`);
     }
     else {
-      currentElement = document.getElementById(`c-our-pepople__section_page-${pageNumber}`);
-      pastElement = document.getElementById(`c-our-pepople__section_page-1`);
+      currentElement = document.getElementById(`c-our-people__section_page-${pageNumber}`);
+      pastElement = document.getElementById(`c-our-people__section_page-1`);
     }
   
     pastElement.style.display = "none";
