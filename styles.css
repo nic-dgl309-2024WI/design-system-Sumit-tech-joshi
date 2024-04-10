@@ -1166,7 +1166,6 @@ ol {
 
 .u-btn__green {
   display: inline-block;
-  padding: 10px;
   border-radius: 10px;
   font-style: italic;
   font-weight: 600;
@@ -1174,6 +1173,8 @@ ol {
   font-size: 1.4rem;
   width: auto;
   cursor: pointer;
+  text-decoration: none;
+  padding: 1.1rem;
 }
 
 .u-btn__product {
@@ -1186,6 +1187,8 @@ ol {
   font-weight: 400;
   width: auto;
   cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
 }
 
 /* transparent color */
@@ -1247,11 +1250,6 @@ ol {
 /* Navbar icon padding to 5px */
 .c-header i {
   padding: 5px;
-}
-
-/* Navbar link hover effect */
-.c-header__navbar a:hover {
-  color: var(--clr-accent-one-100);
 }
 
 /* Active page link */
@@ -1547,12 +1545,42 @@ textarea {
   }
 
   .c-header__list li {
-    padding: 1rem;
+    padding: 0;
     font-size: 1.5rem;
+    position: sticky;
+
   }
 
+  /* Navbar link hover effect */
   .c-header__list a {
+    padding: 0.4rem 2rem;
+    display: block;
     color: var(--clr-mid-dark);
+  }
+
+  .c-header__navbar a:hover {
+    color: var(--clr-accent-one-100);
+  }
+
+  /* Nav hover effect */
+ 
+  .c-header__list a:after {
+    content: "";
+    background: var(--clr-mid-dark);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+  }
+
+  .c-header__list a:hover:after {
+    transform: skewX(0deg) scale(0.6, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 
   /* Hero card style */
