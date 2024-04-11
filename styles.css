@@ -1242,6 +1242,10 @@ ol {
   list-style: none;
 }
 
+.c-header__list li {
+  border-bottom: 2px solid var(--clr-mid-white);
+}
+
 /* Navbar link set text decoration to none */
 .c-header__navbar a {
   text-decoration: none;
@@ -1479,6 +1483,10 @@ textarea {
   z-index: 11111;
 }
 
+#close-icon-index {
+  color: var(--clr-mid-white);
+}
+
 /* Styles for hiding certain elements */
 .hide-step-1,
 .hide-step-2,
@@ -1548,7 +1556,7 @@ textarea {
     padding: 0;
     font-size: 1.5rem;
     position: sticky;
-
+    border-bottom: none;
   }
 
   /* Navbar link hover effect */
