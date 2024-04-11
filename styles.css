@@ -1336,17 +1336,6 @@ ol {
   max-height: 200px;
 }
 
-/* Gift certificate steps */
-
-.c-service__section ol li:before {
-  content: "\2022"; /* Bullet character */
-  color: var(--clr-accent-one-100); /* Custom color for bullet */
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
 /* Link styles */
 .c-service__section ol {
   text-align: left;
@@ -1509,6 +1498,29 @@ textarea {
 .carousel article {
   flex: 0 0 auto;
   transition: transform 0.5s ease;
+}
+
+.c-service__section li {
+  position: relative;
+}
+
+.c-service__section button {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+p.c-service__section__title {
+  max-width: 30rem;
+}
+
+p.c-service__section__title:before {
+   content: "\2022"; 
+   color: var(--clr-accent-one-100); 
+   font-weight: bold; 
+   display: inline-block; 
+   width: 1em; 
+   margin-left: -1em; 
 }
 
 /* Desktop-specific styles */
@@ -1675,5 +1687,9 @@ textarea {
     min-width: auto;
     /* width: 400px;
     height: 400px; */
+  }
+
+  .c-service__section li {
+    margin-top: 3rem;
   }
 }
