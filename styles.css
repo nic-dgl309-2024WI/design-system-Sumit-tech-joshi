@@ -1511,7 +1511,7 @@ textarea {
 }
 
 p.c-service__section__title {
-  max-width: 30rem;
+  max-width: 18rem;
 }
 
 p.c-service__section__title:before {
@@ -1691,5 +1691,9 @@ p.c-service__section__title:before {
 
   .c-service__section li {
     margin-top: 3rem;
+  }
+
+  p.c-service__section__title {
+    max-width: 30rem;
   }
 }
