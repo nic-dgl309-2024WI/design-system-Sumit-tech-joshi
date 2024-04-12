@@ -502,6 +502,10 @@ ol {
   margin-left: 4rem;
 }
 
+.l-ml-auto {
+  margin-left: auto;
+}
+
 /* Margin Rights */
 .l-mr-05 {
   margin-right: 0.5rem;
@@ -1414,7 +1418,14 @@ ol {
 
 /* Styles for paragraphs within the our testimonials section */
 .c-our-testimonial__section p {
-  max-width: 20rem;
+  border-top: 2px solid var(--clr-accent-one-100);
+  text-align: left;
+}
+
+.c-our-testimonial__section i {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: var(--clr-mid-dark);
 }
 
 /* Styles for social icons */
@@ -1695,9 +1706,7 @@ p.c-service__section__title:before {
 
   /* Testimonial Section */
   .c-our-testimonial__section article {
-    min-width: auto;
-    /* width: 400px;
-    height: 400px; */
+    min-width: 30%;
   }
 
   .c-service__section li {
