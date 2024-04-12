@@ -1360,6 +1360,7 @@ ol {
   text-align: center;
   padding-top: 30px;
   width: 100%;
+  border-top: 5px solid var(--clr-accent-one-100);
 }
 
 /* Styles for images within the our people section */
@@ -1387,6 +1388,7 @@ ol {
   text-align: center;
   padding-top: 30px;
   min-width: 100%;
+  border-top: 5px solid var(--clr-accent-one-100);
 }
 
 /* Styles for images within the our testimonials section */
