@@ -1222,6 +1222,10 @@ ol {
   margin: 0 auto;
 }
 
+.u-border-green__top {
+  border-top: 2px solid var(--clr-accent-one-100);
+}
+
 /* Index page style */
 
 /* -------- Header ----------*/
@@ -1536,6 +1540,26 @@ p.c-service__section__title:before {
   margin-left: -1em;
 }
 
+.c-our-people__social li {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.c-our-people__social a {
+  display: block;
+  border-radius: 15px 0 15px 0;
+  font-size: 3rem;
+  color: var(--clr-accent-one-100);
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  transition: all 0.35s ease 0s;
+}
+
+.c-our-people__social a:hover {
+  background: var(--clr-mid-dark);
+}
+
 /* Desktop-specific styles */
 @media (min-width: 768px) {
   /* Hamburger and close icons */
@@ -1695,7 +1719,7 @@ p.c-service__section__title:before {
 
   /* People Section */
   .c-our-people__section article {
-    width: auto;
+    min-width:  30%;
   }
 
   /* Footer CSS */
