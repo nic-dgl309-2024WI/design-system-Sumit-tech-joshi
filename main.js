@@ -43,13 +43,13 @@ function handlePagination (pageNumber) {
     document.getElementById(`step-des-${step}`).classList.toggle(`hide-step-${step}`);
   }
 
-const paginationNumbers = document.getElementById("pagination-numbers");
+const paginationNumbers = document.getElementById("our-story-pagination-numbers");
 const paginatedList = document.getElementById("c-our-people__section_page-1");
 const listItems = paginatedList.querySelectorAll("article");
-const nextButton = document.getElementById("next-button");
-const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("story-story-prev-button");
+const prevButton = document.getElementById("story-prev-button");
 
-const paginationLimit = 4;
+const paginationLimit = 3;
 const pageCount = Math.ceil(listItems.length / paginationLimit);
 let currentPage = 1;
 
