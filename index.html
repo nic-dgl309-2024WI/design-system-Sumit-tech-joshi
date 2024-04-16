@@ -6,7 +6,6 @@
     <title>Outback Nursery</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <script src="main.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -435,6 +434,8 @@
         </h2>
         <div
           id="c-our-people__section_page-1"
+          data-current-page="1"
+          aria-live="polite"
           class="carousell c-our-people__section l-flex l-flex__align-center l-flex__row l-grid__gap-3 l-pt-4"
         >
           <article
@@ -629,11 +630,6 @@
               </li>
             </ul>
           </article>
-        </div>
-        <div
-          id="c-our-people__section_page-2"
-          class="c-our-people__section l-flex l-flex__align-center l-flex__row l-grid__gap-3 l-pt-4"
-        >
           <article
             class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
           >
@@ -778,27 +774,56 @@
               </li>
             </ul>
           </article>
-        </div>
+          <article
+            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
+          >
+            <img src="./images/team_02.webp" alt="Product image" />
+            <h3 class="l-pt-2">Mausi chauhan</h3>
 
-        <div class="c-our-people__section--pagination l-p-2">
-          <button
-            class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
-            id="c-our-people__section--page-one"
-            onclick="handlePagination(1)"
-          >
-            1
-          </button>
-          <button
-            class="l-px-1 l-mb-2 u-accent-bg__purple--light u-white u-fs__200 u-cursor-pointer"
-            id="c-our-people__section--page-two"
-            onclick="handlePagination(2)"
-          >
-            2
-          </button>
+            <p class="l-p-1">Supervisor</p>
+            <p class="l-p-1 u-border-green__top">
+              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+              veniam fugiat delectus sunt.
+            </p>
+            <ul class="c-our-people__social l-mr-1">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+              </li>
+            </ul>
+          </article>
         </div>
+        <!-- Pagination section -->
+        <nav class="c-our-story__pagination">
+          <button
+            class="c-our-story__pagination-button"
+            id="prev-button"
+            aria-label="Previous page"
+            title="Previous page"
+          >
+            &lt;&lt;
+          </button>
+
+          <div class="c-our-story__pagination-number" id="pagination-numbers"></div>
+
+          <button
+            class="c-our-story__pagination-button"
+            id="next-button"
+            aria-label="Next page"
+            title="Next page"
+          >
+            &gt;&gt;
+          </button>
+        </nav>
       </section>
       <!-- Social media section -->
-      <section class="u-text__center u-side_padding">
+      <section class="l-mt-2 u-text__center u-side_padding">
         <div
           class="c-social__section l-flex l-flex__align-center l-flex__column"
         >
@@ -1097,4 +1122,5 @@
       </div>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>

@@ -1367,7 +1367,7 @@ ol {
   border-radius: 10px;
   text-align: center;
   padding-top: 30px;
-  width: 100%;
+  min-width: 100%;
   border-top: 5px solid var(--clr-accent-one-100);
 }
 
@@ -1560,6 +1560,57 @@ p.c-service__section__title:before {
   background: var(--clr-mid-dark);
 }
 
+.c-our-story__pagination {
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.c-our-story__pagination-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+  color: var(--clr-accent-three-200);
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 400;
+
+}
+
+.pagination-number:hover,
+.c-our-story__pagination-button:not(.disabled):hover {
+  background: var(--clr-mid-white);
+}
+
+.pagination-number.active {
+  color: var(--clr-mid-white);
+  background: var(--clr-accent-three-200);
+}
+
+.pagination-number {
+  color: var(--clr-mid-dark);
+  cursor: pointer;
+  background: var(--clr-mid-white);
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.05) inset;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s ease 0s;
+}
+
 /* Desktop-specific styles */
 @media (min-width: 768px) {
   /* Hamburger and close icons */
@@ -1719,7 +1770,7 @@ p.c-service__section__title:before {
 
   /* People Section */
   .c-our-people__section article {
-    min-width:  30%;
+    min-width: 30%;
   }
 
   /* Footer CSS */
@@ -1739,5 +1790,9 @@ p.c-service__section__title:before {
 
   p.c-service__section__title {
     max-width: 30rem;
+  }
+
+  .c-our-story__pagination-button { 
+    margin: 0.25rem 2rem;
   }
 }
