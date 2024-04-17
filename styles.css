@@ -113,6 +113,11 @@ ol {
 /* Styles images for all section */
 img {
   width: 100%;
+  border-radius: 1.4rem;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 /* List styles */
