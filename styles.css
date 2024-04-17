@@ -1184,13 +1184,38 @@ ol {
   cursor: pointer;
   text-decoration: none;
   padding: 1.1rem;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.u-btn__green:hover {
+  color: var(--clr-accent-one-100);
+  background-color: var(--clr-mid-dark);
+  scale: 1.1;
+}
+
+.u-btn__green::after{
+  content: '';
+  color: var(--clr-accent-one-100);
+  background-color: var(--clr-mid-dark);
+  width: 0;
+  height: 100%;
+  inset: 0;
+  transition: all 0.5s linear;
+  z-index: -1;    
+  visibility: hidden;
+}
+
+.u-btn__green:hover::after {
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .u-btn__product {
   display: inline-block;
   padding: 6px;
   border-radius: 10px;
-  font-style: italic;
   font-weight: 300;
   width: 70%;
   font-weight: 400;
@@ -1198,6 +1223,31 @@ ol {
   cursor: pointer;
   text-decoration: none;
   padding: 1rem;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.u-btn__product:hover {
+  background-color: var(--clr-accent-one-100);
+  scale: 1.1;
+}
+
+.u-btn__product::after{
+  content: '';
+  color: var(--clr-accent-one-100);
+  background-color: var(--clr-accent-one-100);
+  width: 0;
+  height: 100%;
+  inset: 0;
+  transition: all 0.5s linear;
+  z-index: -1;    
+  visibility: hidden;
+}
+
+.u-btn__product:hover::after {
+  visibility: visible;
+  transform: translateX(0);
 }
 
 /* transparent color */
@@ -1464,7 +1514,7 @@ textarea {
 
 /* Hover styles for the submit button within the contact form */
 .c-contact-us__section--form-container input[type="submit"]:hover {
-  background-color: var(--clr-accent-two-400);
+  background-color: var(--clr-accent-one-100);
 }
 
 /* Styles for paragraphs within the contact section */
