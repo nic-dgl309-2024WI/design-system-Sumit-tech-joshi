@@ -1425,6 +1425,7 @@ ol {
 /* Styles for social icons */
 .c-social__icons img {
   width: 50px !important;
+  cursor: pointer;
 }
 
 /* Styles for the contact form container */
@@ -1528,6 +1529,10 @@ p.c-service__section__title:before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.c-social__section--text.l-p-1.l-pb-4.u-center__vertical {
+  max-width: 45%;
 }
 
 .c-our-people__social li {
