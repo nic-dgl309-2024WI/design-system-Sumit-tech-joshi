@@ -1701,6 +1701,7 @@ p.c-service__section__title:before {
     gap: 0;
     position: relative;
     justify-content: flex-end;
+    align-items: center;
   }
 
   .c-header__list li {

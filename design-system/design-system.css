@@ -44,10 +44,6 @@
 /* Sidebar Styles
      ---------------------------------------- */
 
-.l-sidebar {
-  background-color: var(--clr-secondary-100);
-}
-
 /* Remove margin from sidebar */
 .c-sidebar__list--wrapper {
   margin: 0;
