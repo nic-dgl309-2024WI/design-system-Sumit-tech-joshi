@@ -32,13 +32,15 @@
             alt="Logo image"
           ></image>
         </a>
-        <h1 class="u-fs__800 u-ff__montserrat-serif u-capitalize">
-          Design System
-        </h1>
         <!-- Navigation bar with page links -->
         <ul class="c-header__list hide-sidebar-menu" id="nav-link-wrapper">
           <li><a href="./about-me.html">About Me</a></li>
-          <li><a class="is-active-page u-fw__bold" href="../index.html" class="is-active-page">Demo Site</a></li>
+          <li>
+            <a
+              href="../index.html"
+              >Demo Site</a
+            >
+          </li>
         </ul>
       </nav>
       <!-- Hamburger and close icons for mobile menu -->
@@ -56,43 +58,174 @@
       ></i>
     </header>
     <!-- Sidebar navigation menu -->
-    <nav class="l-sidebar u-pt-header l-position-fixed l-pl-1">
-      <ul
-        class="c-sidebar__list--wrapper hide-sidebar-menu"
-        id="sidebar-wrapper"
-      >
-        <li class="c-sidebar__list--title u-fw__bold">Branding</li>
-        <ul class="c-sidebar__list">
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./colours.html">Colours</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./typography.html">Typography</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./logo.html" class="is-active-page" class="u-text__primary--light" href="#">Logo</a></li>
+    <div class="l-flex u-bg__secondary--lightest">
+      <nav class="l-sidebar u-pt-header l-position-fixed l-pl-1">
+        <ul
+          class="c-sidebar__list--wrapper hide-sidebar-menu"
+          id="sidebar-wrapper"
+        >
+          <li class="c-sidebar__list--title u-fw__bold">Branding</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./colours.html"
+                >Colours</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./typography.html"
+                >Typography</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a
+                class="u-text__primary--light"
+                href="./logo.html"
+                class="is-active-page"
+                class="u-text__primary--light"
+                href="#"
+                >Logo</a
+              >
+            </li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Utilities</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./spacing.html"
+                >Spacing</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./container.html"
+                >Containers</a
+              >
+            </li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Navigation</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./navbar.html">Navbars</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./breadcrumb.html"
+                >Breadcrumbs</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./pagination.html"
+                >Pagination</a
+              >
+            </li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Blocks</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./header.html">Header</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./hero.html">Hero</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./footer.html">Footer</a>
+            </li>
+          </ul>
+          <li class="c-sidebar__list--title u-fw__bold">Components</li>
+          <ul class="c-sidebar__list">
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./card.html">Cards</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="././button.html"
+                >Button</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./form.html">Forms</a>
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./accordion.html"
+                >Accordion</a
+              >
+            </li>
+            <li class="c-sidebar__list-item">
+              <a class="u-text__primary--light" href="./list.html">Lists</a>
+            </li>
+          </ul>
         </ul>
-        <li class="c-sidebar__list--title u-fw__bold">Utilities</li>
-        <ul class="c-sidebar__list">
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./spacing.html">Spacing</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./container.html">Containers</a></li>
-        </ul>
-        <li class="c-sidebar__list--title u-fw__bold">Navigation</li>
-        <ul class="c-sidebar__list">
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./navbar.html">Navbars</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./breadcrumb.html">Breadcrumbs</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./pagination.html">Pagination</a></li>
-        </ul>
-        <li class="c-sidebar__list--title u-fw__bold">Blocks</li>
-        <ul class="c-sidebar__list">
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./header.html">Header</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./hero.html">Hero</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./footer.html">Footer</a></li>
-        </ul>
-        <li class="c-sidebar__list--title u-fw__bold">Components</li>
-        <ul class="c-sidebar__list">
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./card.html">Cards</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="././button.html">Button</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./form.html">Forms</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./accordion.html">Accordion</a></li>
-          <li class="c-sidebar__list-item"><a class="u-text__primary--light" href="./list.html">Lists</a></li>
-        </ul>
-      </ul>
-    </nav>
+      </nav>
+      <main class="u-body__container u-pt-header">
+        <section>
+          <div class="u-text__center">
+            <h1 class="u-fs__600 u-ff__montserrat-serif u-capitalize">
+              Welcome to the Outback Nursery Design System
+            </h1>
+            <p class="l-pt-2">
+              Greetings, designers and developers! Welcome to the Outback
+              Nursery Design System, your comprehensive toolkit for crafting
+              digital and graphic design products that encapsulate the essence
+              of Outback Nursery's natural beauty and charm. Whether you're
+              embarking on the creation of a website, app, or marketing
+              materials for the nursery, this design system is your go-to
+              resource for seamless integration and consistent results.
+            </p>
+          </div>
+
+          <h2 class="u-capitalize u-fs__500 l-mt-6">What's Inside:</h2>
+          <ol class="u-list-desimal">
+            <li class="l-m-2">
+              <strong>Documentation Website:</strong>
+              Dive into our comprehensive documentation website, your gateway to
+              understanding and utilizing every facet of the Outback Nursery
+              Design System...
+            </li>
+            <li class="l-m-2">
+              <strong>GitHub Repository: </strong>
+              Access the comprehensive GitHub repository housing the Outback
+              Nursery Design System's CSS sheet...
+            </li>
+            <li class="l-m-2">
+              <strong>Demo Site:</strong>
+              Explore the demo site, where you can witness firsthand how each
+              part of the design system integrates into real-world contexts...
+            </li>
+            <li class="l-m-2">
+              <strong>About Me:</strong>
+              Meet the mind behind the Outback Nursery Design System. This page
+              provides insights into the creator of this toolkit...
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 class="u-capitalize u-fs__500 l-mt-6">
+            Why Choose Outback Nursery Design System:
+          </h2>
+          <ul class="c-service__section">
+            <li>
+              <strong>Authenticity:</strong> Rooted in the natural beauty and
+              charm of Outback Nursery, the design system offers a genuine
+              reflection of the brand identity and values.
+            </li>
+            <li>
+              <strong>Efficiency:</strong> With clear documentation,
+              downloadable CSS, and a demo site for reference, streamline your
+              design and development process with ease and efficiency.
+            </li>
+            <li>
+              <strong>Versatility:</strong> Whether you're designing a website,
+              mobile app, or promotional materials, the design system offers
+              versatility and adaptability to suit your unique needs and
+              preferences.
+            </li>
+          </ul>
+        </section>
+
+        <section class="l-mt-6 l-mb-3 u-text__center">
+          <h3>
+            Let's bring the beauty of the outdoors to the digital realm, one
+            pixel at a time. Happy designing!
+          </h3>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
