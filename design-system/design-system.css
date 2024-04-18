@@ -111,6 +111,27 @@ td {
   text-decoration: underline;
 }
 
+.c-code-container {
+  position: relative;
+}
+
+.c-code-container i {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  color: var(--clr-mid-white);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.c-code-container i::before {
+  position: absolute;
+  right: 0rem;
+  top: 1rem;
+  color: var(--clr-mid-white);
+  cursor: pointer;
+}
+
 /* Dark theme for textarea */
 .c-code-container textarea {
   height: 400px;
