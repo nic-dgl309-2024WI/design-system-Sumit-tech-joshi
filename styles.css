@@ -1584,7 +1584,7 @@ p.c-service__section__title:before {
 }
 
 .c-social__section--text.l-p-1.l-pb-4.u-center__vertical {
-  max-width: 45%;
+  max-width: 100%;
 }
 
 .c-our-people__social li {
@@ -1842,5 +1842,9 @@ p.c-service__section__title:before {
 
   .c-testinonial__pagination-button, .c-our-story__pagination-button { 
     margin: 0.25rem 2rem;
+  }
+
+  .c-social__section--text.l-p-1.l-pb-4.u-center__vertical {
+    max-width: 45%;
   }
 }
