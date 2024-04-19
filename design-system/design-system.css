@@ -1,3 +1,8 @@
+
+/* Add color to the body design system */
+body {
+  background-color: var(--clr-secondary-100);
+}
 /* 
    Top Navbar Styles
    ----------------------------------------
