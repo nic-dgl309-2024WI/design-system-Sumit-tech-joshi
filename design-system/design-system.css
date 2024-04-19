@@ -118,8 +118,8 @@ td {
 
 .c-code-container i {
   position: absolute;
-  right: 4rem;
-  top: 4rem;
+  right: 1rem;
+  top: 1rem;
   color: var(--clr-mid-white);
   font-size: 2rem;
   cursor: pointer;
@@ -136,9 +136,8 @@ td {
 /* Dark theme for textarea */
 .c-code-container textarea {
   height: 400px;
-  background-color: #1e1e1e; /* Dark background */
-  color: #d4d4d4; /* Light text */
-  border: 1px solid #333; /* Dark border */
+  background-color: var(--clr-dark); /* Dark background */
+  color: var(--clr-mid-white); /* Light text */
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace; /* Monospace font */
   font-size: 14px;
@@ -169,6 +168,18 @@ td {
   font-weight: bold;
   display: inline-block;
   width: 1em;
+}
+
+.c-testinonial__pagination, .c-our-story__pagination {
+  justify-content: left;
+}
+
+.c-service__section--text, .c-service__section--text {
+  width: 100%;
+}
+
+.c-plant__section article {
+  width: 25% !important;
 }
 
 /* ==Media Queries for desktops, 1200px and up) == */
