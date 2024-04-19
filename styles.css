@@ -1192,7 +1192,6 @@ ol {
 .u-btn__green:hover {
   color: var(--clr-accent-one-100);
   background-color: var(--clr-mid-dark);
-  scale: 1.1;
 }
 
 .u-btn__green::after{
@@ -1230,12 +1229,10 @@ ol {
 
 .u-btn__product:hover {
   background-color: var(--clr-accent-one-100);
-  scale: 1.1;
 }
 
 .u-btn__product::after{
   content: '';
-  color: var(--clr-accent-one-100);
   background-color: var(--clr-accent-one-100);
   width: 0;
   height: 100%;
@@ -1740,7 +1737,6 @@ p.c-service__section__title:before {
 
   .c-header__list a:hover:after {
     transform: skewX(0deg) scale(0.6, 1);
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 

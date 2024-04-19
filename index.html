@@ -1,1157 +1,916 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Outback Nursery</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outback Nursery</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- season closure notice -->
-    <div class="u-accent-bg__green--light u-white c-notice-board">
-      March 29, 2024 Happy Easter and Happy Spring! We are open every day
-      including statutory holidays from 9-5
-    </div>
-    <!-- Header section with navigation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
-    <header
-      class="c-header l-position-sticky l-top-0 l-full-width l-z-index-4a l-full-width l-z-index-4"
-    >
-      <nav class="c-header__navbar">
-        <a href="./index.html">
-          <image
-            class="c-header__logo"
-            src="./images/logo.png"
-            alt="Logo image"
-          ></image>
-        </a>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-        <!-- Navigation bar with page links -->
-        <ul
-          class="u-bg__primary--light c-header__list hide-top-menu l-flex l-flex__column l-flex__align-center l-position-absolute l-full-height__100-vh u-capitalize l-full-width"
-          id="nav-link-wrapper-index"
-        >
-          <li class="u-fw__bold l-p-3 u-fs__500">
-            <a class="u-white" href="./coming-soon.html">plants</a>
-          </li>
-          <li class="u-fw__bold l-p-3 u-fs__500">
-            <a class="u-white" href="./coming-soon.html">services</a>
-          </li>
-          <li class="u-fw__bold l-p-3 u-fs__500">
-            <a class="u-white" href="./coming-soon.html">resources</a>
-          </li>
-          <li class="u-fw__bold l-p-3 u-fs__500">
-            <a class="u-white" href="./coming-soon.html">about us</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Hamburger and close icons for mobile menu -->
-      <i
-        class="fa fa-bars"
-        id="hamburger-icon-index"
-        aria-hidden="true"
-        onclick="handleToggleIndexClick()"
-      ></i>
-      <i
-        class="fa fa-times is-show-icon-index"
-        id="close-icon-index"
-        aria-hidden="true"
-        onclick="handleToggleIndexClick()"
-      ></i>
-    </header>
-    <!-- main section -->
-    <main>
-      <!-- Hero section -->
-      <section
-        class="c-top-banner l-flex__justify-center u-white l-flex l-flex__align-center l-flex__column"
-        style="background-image: url(./images/bg_header_01.jpg)"
-      >
-        <h1 class="u-fs__700 l-p-1">Outback Nursery</h1>
-        <h3 class="l-p-1 u-fs__300">
-          Your Premium Destination for Gardning in Courtenay, BC.
-        </h3>
-        <a
-          href="./coming-soon.html"
-          class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200"
-        >
-          Explore Our Plants
-        </a>
-      </section>
+</head>
 
-      <!-- Our story section -->
-      <section class="u-text__center u-side_padding">
-        <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">Our story</h2>
-        <div
-          class="c-our-story__section l-flex l-flex__align-center l-flex__column"
-        >
-          <image src="./images/bg_our-story.jpg" />
-          <div class="c-our-story__section--text l-p-1 l-pb-4">
-            <h3 class="u-fs__300">
-              From Roots to Blooms at Outback Nursery & Garden Centre.
-            </h3>
-            <p class="l-p-1 u-fs__200 l-pb-4 l-pt-4">
-              This title communicates the narrative of the nursery's evolution
-              over time, from its beginnings in 1998-1999 to its current status
-              as a prominent garden center on Vancouver Island. It emphasizes
-              the journey, growth, and transformation of Outback Nursery,
-              inviting visitors to explore the story behind the establishment.
-            </p>
+<body>
+  <!-- season closure notice -->
+  <div class="u-accent-bg__green--light u-white c-notice-board">
+    March 29, 2024 Happy Easter and Happy Spring! We are open every day
+    including statutory holidays from 9-5
+  </div>
+  <!-- Header section with navigation -->
 
-            <a
-              href="./coming-soon.html"
-              class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200"
-            >
-              Explore Our Journey</a
-            >
-          </div>
-        </div>
-      </section>
+  <header class="c-header l-position-sticky l-top-0 l-full-width l-z-index-4a l-full-width l-z-index-4">
+    <nav class="c-header__navbar">
+      <a href="./index.html">
+        <img class="c-header__logo" src="./images/logo.png" alt="Logo image">
+      </a>
 
-      <!-- Product section -->
-      <section class="u-text__center u-side_padding">
-        <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">Rooted in Quality</h2>
-        <h3 class="u-fs__300">
-          Explore our premium stock plants for a flourshing garden
-        </h3>
+      <!-- Navigation bar with page links -->
+      <ul
+        class="u-bg__primary--light c-header__list hide-top-menu l-flex l-flex__column l-flex__align-center l-position-absolute l-full-height__100-vh u-capitalize l-full-width"
+        id="nav-link-wrapper-index">
+        <li class="u-fw__bold l-p-3 u-fs__500">
+          <a class="u-white" href="./coming-soon.html">plants</a>
+        </li>
+        <li class="u-fw__bold l-p-3 u-fs__500">
+          <a class="u-white" href="./coming-soon.html">services</a>
+        </li>
+        <li class="u-fw__bold l-p-3 u-fs__500">
+          <a class="u-white" href="./coming-soon.html">resources</a>
+        </li>
+        <li class="u-fw__bold l-p-3 u-fs__500">
+          <a class="u-white" href="./coming-soon.html">about us</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Hamburger and close icons for mobile menu -->
+    <i class="fa fa-bars" id="hamburger-icon-index" aria-hidden="true" onclick="handleToggleIndexClick()"></i>
+    <i class="fa fa-times is-show-icon-index" id="close-icon-index" aria-hidden="true"
+      onclick="handleToggleIndexClick()"></i>
+  </header>
+  <!-- main section -->
+  <main>
+    <!-- Hero section -->
+    <section class="c-top-banner l-flex__justify-center u-white l-flex l-flex__align-center l-flex__column"
+      style="background-image: url(./images/bg_header_01.jpg)">
+      <h1 class="u-fs__700 l-p-1">Outback Nursery</h1>
+      <h3 class="l-p-1 u-fs__300">
+        Your Premium Destination for Gardning in Courtenay, BC.
+      </h3>
+      <a href="./coming-soon.html" class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200">
+        Explore Our Plants
+      </a>
+    </section>
 
-        <div class="c-plant__section l-flex l-flex__align-center l-flex__row">
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center"
-          >
-            <image src="./images/plant_01.jpg" alt="Product image"></image>
-            <h4 class="l-p-05">Cedar</h4>
-            <p>Indoor or outdoor use
-              1565 Leaves
-              Perfect for entranceway décor</p>
-            <a
-              href="./coming-soon.html"
-              class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light"
-            >
-              View More</a
-            >
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center"
-          >
-            <image src="./images/plant_02.jpg" alt="Product image"></image>
-            <h4 class="l-p-05">Cedrus</h4>
-            <p class="">Dual trunks
-              More than 2,000 leaves
-              An ideal home or office decoration</p>
-            <a
-              href="./coming-soon.html"
-              class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light"
-            >
-              View More</a
-            >
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center"
-          >
-            <image src="./images/plant_03.jpg" alt="Product image"></image>
-            <h4 class="l-p-05">Chamaecyparis</h4>
-            <p>Round
-              Full Sun to Part Shade
-              Ht: 24 inch Spr:24 inch</p>
-            <a
-              href="./coming-soon.html"
-              class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light"
-            >
-              View More</a
-            >
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center"
-          >
-            <image src="./images/plant_04.jpg" alt="Product image"></image>
-            <h4 class="l-p-05">Cypress</h4>
-            <p class="">1650 leaves
-              UV resistant indoor / outdoor
-              Bold statemen</p>
-            <a
-              href="./coming-soon.html"
-              class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light"
-            >
-              View More</a
-            >
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center"
-          >
-            <image src="./images/plant_05.jpg" alt="Product image"></image>
-            <h4 class="l-p-05">Colorado Spruce</h4>
-            <p>Deer-resistant, stunning blue foliage!
-              Picea pungens 'Baby Blue'</p>
-            <a
-              href="./coming-soon.html"
-              class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light"
-            >
-              View More</a
-            >
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center"
-          >
-            <image src="./images/plant_06.jpg" alt="Product image"></image>
-            <h4 class="l-p-05">Eucalyptus Topiary</h4>
-            <p class="">Product Dimensions: H: 57 In. W: 18 In. D: 18 In
-              Perfectly highlights an office.</p>
-            <a
-              href="./coming-soon.html"
-              class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light"
-            >
-              View More</a
-            >
-          </article>
-        </div>
-        <a
-          href="./coming-soon.html"
-          class="l-mt-2 u-btn__green u-white u-accent-bg__green--light"
-        >
-          Find Your Perfect Plant</a
-        >
-      </section>
-
-      <!-- Our story section -->
-      <section class="u-text__center u-side_padding">
-        <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">Let's Grow Together</h2>
-        <h3 class="u-fs__300">
-          Explore our plant installation services and join us in cultivating
-          lush green spaces.
-        </h3>
-        <div
-          class="c-our-story__section l-flex l-flex__align-center l-flex__column"
-        >
-          <image src="./images/plant_instalation.jpg" />
-          <div class="c-our-story__section--text l-p-1 l-pb-4">
-            <p class="l-p-1 u-fs__200 l-pb-4 l-pt-4">
-              Welcome to our plant installation section, Our expert team
-              carefully selects and installs greenery to enhance your space with
-              natural beauty. From homes to businesses, we create lush
-              environments tailored to your preferences. With attention to
-              detail, we seamlessly integrate plants into your landscape,
-              transforming it into a vibrant oasis. Experience the difference of
-              professional installation and let us bring nature's touch to your
-              doorstep. Let's Grow Together – where every space flourishes.
-            </p>
-
-            <a
-              href="./coming-soon.html"
-              class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200"
-              >Grow Better</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Service section -->
-      <section class="u-text__center u-side_padding">
-        <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">
-          Empower your green Journey
-        </h2>
-        <div
-          class="c-service__section l-flex l-flex__align-center l-flex__column"
-        >
-          <image src="./images/anntts_tree.jpg" />
-          <div class="c-service__section--text l-p-1 l-pb-4">
-            <h3 class="u-fs__300 l-pb-2">Annette's Favorite Trees</h3>
-
-            <p class="l-p-1 u-fs__200 l-pb-2 l-pt-1">
-              Explore Annette's top picks for weeping Japanese maples and dwarf
-              conifers. From 'Crimson Queen' with wine-red foliage to 'Little
-              Gem' Spruce with tiny dark green needles, these trees add elegance
-              and charm to any garden. Perfect for containers, rockeries, or as
-              small specimens, they offer year-round interest and vibrant
-              colors. Let Annette's curated selection inspire your outdoor
-              space.
-            </p>
-            <a
-              href="./coming-soon.html"
-              class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200"
-              >Explore now!</a
-            >
-          </div>
-        </div>
-
-        <div
-          class="c-service__section--gift l-flex l-flex__align-center l-flex__column"
-        >
-          <h2 class="u-capitalize u-fs__500 l-mt-6">
-            Get Gift Certificates in 3 Easy Steps!
-          </h2>
-          <div class="c-service__section l-flex l-flex__column-reverse">
-            <div
-              class="c-service__section--text l-p-1 l-pb-4 u-center__vertical"
-            >
-              <p class="l-p-1 u-fs__200 l-p-2">
-                Looking for the perfect gift? Outback Nursery makes it simple
-                with our convenient gift certificates! In just three easy steps,
-                you can surprise your loved ones with the joy of gardening:
-              </p>
-              <ol>
-                <li class="l-mt-1">
-                  <p class="c-service__section__title">
-                    Introduce yourself by sending an email to
-                    <a
-                      href="./coming-soon.html"
-                      href="mailto:info@outbacknursery.ca"
-                      >info@outbacknursery.ca</a
-                    >
-                  </p>
-
-                  <button
-                    id="gift-step-1-plus"
-                    class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1"
-                    onclick="handleStepVisibility(1)"
-                  >
-                    +
-                  </button>
-                  <button
-                    id="gift-step-1-minus"
-                    class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1 hide-step-1"
-                    onclick="handleStepVisibility(1)"
-                  >
-                    -
-                  </button>
-                  <p class="l-p-2 hide-step-1" id="step-des-1">
-                    This step is asking you to initiate contact with Outback
-                    Nursery by sending them an email. The email address
-                    provided, info@outbacknursery.ca, is where you should send
-                    your message. When you send the email, you should introduce
-                    yourself, provide any necessary details, and specify the
-                    purpose of your communication. This step is essentially the
-                    first point of contact with the nursery, allowing them to
-                    know who you are and why you are reaching out to them.
-                  </p>
-                </li>
-
-                <li class="l-mt-1">
-                  <p class="c-service__section__title">
-                    Make a quick payment via E-transfer to
-                    <a
-                      href="./coming-soon.html"
-                      href="mailto:info@outbacknursery.ca"
-                      >info@outbacknursery.ca</a
-                    >, specifying your chosen amount.
-                  </p>
-
-                  <button
-                    id="gift-step-2-plus"
-                    class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1"
-                    onclick="handleStepVisibility(2)"
-                  >
-                    +
-                  </button>
-                  <button
-                    id="gift-step-2-minus"
-                    class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1 hide-step-2"
-                    onclick="handleStepVisibility(2)"
-                  >
-                    -
-                  </button>
-                  <p class="l-p-2 hide-step-2" id="step-des-2">
-                    Once you've made contact and established what you want to
-                    purchase or the service you're interested in, the next step
-                    is to make a payment. In this case, they are asking you to
-                    make a payment via E-transfer to the same email address,
-                    info@outbacknursery.ca. E-transfer is a secure and
-                    convenient way to transfer funds electronically from your
-                    bank account to the recipient's account. When making the
-                    transfer, you need to specify the amount you are paying,
-                    ensuring that it matches the agreed-upon price for the
-                    product or service.
-                  </p>
-                </li>
-                <li class="l-mt-1">
-                  <p class="c-service__section__title">
-                    Sit back and relax as we prepare your personalized voucher.
-                    We'll scan and email it directly to you or to a recipient of
-                    your choice.
-                  </p>
-
-                  <button
-                    id="gift-step-3-plus"
-                    class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1"
-                    onclick="handleStepVisibility(3)"
-                  >
-                    +
-                  </button>
-                  <button
-                    id="gift-step-3-minus"
-                    class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1 hide-step-3"
-                    onclick="handleStepVisibility(3)"
-                  >
-                    -
-                  </button>
-                  <p class="l-p-2 hide-step-3" id="step-des-3">
-                    After you've made the payment, Outback Nursery will process
-                    your order or service request. In this step, they are
-                    letting you know that they will prepare a personalized
-                    voucher for you. This voucher could be for various purposes,
-                    such as a gift certificate, discount coupon, or proof of
-                    purchase. Once the voucher is ready, they will scan it and
-                    send it to you via email. Alternatively, if you're
-                    purchasing the voucher as a gift for someone else, they can
-                    send it directly to the recipient's email address. This step
-                    assures you that once you've completed the payment, they
-                    will take care of the rest and ensure you receive your
-                    voucher promptly.
-                  </p>
-                </li>
-              </ol>
-              <a
-                href="./coming-soon.html"
-                class="l-p-1 l-mt-2 u-btn__green u-white u-accent-bg__green--light u-fs__200"
-                >Gift Nature's Beauty</a
-              >
-            </div>
-            <image class="l-mt-2 l-full-height" src="./images/gift.jpg" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Our People section -->
-      <section class="u-text__center u-side_padding">
-        <h2 class="u-capitalize u-fs__500 l-mt-3 l-mb-1 l-mt-6">
-          Meet Our Team
-        </h2>
-        <div
-          id="c-our-people__section_page-1"
-          data-current-page="1"
-          aria-live="polite"
-          class="carousell c-our-people__section l-flex l-flex__align-center l-flex__row l-grid__gap-3 l-pt-4"
-        >
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_01.jpg" alt="Product image" />
-            <h3 class="l-pt-2">Sumit Joshi</h3>
-
-            <p class="l-p-1">Nursery Manager</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Charles</h3>
-
-            <p class="l-p-1">Greenhouse Technician</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Yogi ji</h3>
-
-            <p class="l-p-1">Plant Health Specialist</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Mamta</h3>
-
-            <p class="l-p-1">Customer Service</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Kumar sanu</h3>
-
-            <p class="l-p-1">Crew Leader</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Himanshu</h3>
-
-            <p class="l-p-1">Delivery Driver</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Ramesh</h3>
-
-            <p class="l-p-1">Marketing Coordinator</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Rinku yadav</h3>
-
-            <p class="l-p-1">Team member</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Kumar sanu</h3>
-
-            <p class="l-p-1">Team member</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Tolsi das</h3>
-
-            <p class="l-p-1">Quality Control</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Kalsain</h3>
-
-            <p class="l-p-1">Warehouse Supervisor</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Lamba hai</h3>
-
-            <p class="l-p-1">Plant Pathologist</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Tolsi das</h3>
-
-            <p class="l-p-1">Quality Control</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Mausi chauhan</h3>
-
-            <p class="l-p-1">Supervisor</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/team_02.webp" alt="Product image" />
-            <h3 class="l-pt-2">Mausi chauhan</h3>
-
-            <p class="l-p-1">Supervisor</p>
-            <p class="l-p-1 u-border-green__top">
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <ul class="c-our-people__social l-mr-1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-          </article>
-        </div>
-        <!-- Pagination section -->
-        <nav class="c-our-story__pagination">
-          <button
-            class="c-our-story__pagination-button"
-            id="story-prev-button"
-            aria-label="Previous page"
-            title="Previous page"
-          >
-            &lt;&lt;
-          </button>
-
-          <div
-            class="c-our-story__pagination-number"
-            id="our-story-pagination-numbers"
-          ></div>
-
-          <button
-            class="c-our-story__pagination-button"
-            id="story-next-button"
-            aria-label="Next page"
-            title="Next page"
-          >
-            &gt;&gt;
-          </button>
-        </nav>
-      </section>
-      <!-- Social media section -->
-      <section class="l-mt-6 u-text__center u-side_padding">
-        <div
-          class="c-social__section l-flex l-flex__align-center l-flex__column"
-        >
-          <div class="c-social__section l-flex l-flex__column-reverse">
-            <div
-              class="c-social__section--text l-p-1 l-pb-4 u-center__vertical"
-            >
-              <h2 class="u-capitalize u-fs__500 l-mt-6">
-                Stay Socially Blossomed
-              </h2>
-              <p class="l-mt-2">
-                Follow us on social media for daily insights, educational
-                resources, and adorable moments from our nurturing environment.
-                Join our community and be a part of the journey in fostering
-                happy and healthy childhoods!
-              </p>
-              <div class="c-social__icons l-flex l-flex__justify-space-around l-mt-2">
-                <image class="l-mt-2" src="./images/fb_icon.png" />
-                <image class="l-mt-2" src="./images/insta_icon.png" />
-                <image class="l-mt-2" src="./images/twitter_icon.png" />
-              </div>
-            </div>
-            <image class="l-mt-2" src="./images/social_media.jpg" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonails section -->
-      <section class="u-text__center u-side_padding">
-        <h2 class="u-capitalize u-fs__500 l-mt-3 l-mb-1 l-mt-6">
-          Testimonails
-        </h2>
-        <div
-          id="c-testimonial__section_page"
-          class="c-our-testimonial__section l-flex l-flex__align-center l-flex__row l-grid__gap-3 l-pt-4"
-        >
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_05.jpeg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Kumar Sanu</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">
-              - Landscape Designer, GreenThumb Designs
-            </h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_06.jpg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Pappu Tiwari</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- Homeowner, Suburban Oasis</h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_07.png" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Chris gale</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- GreenLeaf Corporate Campus</h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_08.webp" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Bhoomi</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- General Contractor</h5>
-          </article>
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_01.jpeg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Onichan shen</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- Property Manager</h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_02.jpeg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Rajpal Yadav</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- ABC Landscaping</h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_03.jpeg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Modi ji</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- Head of Operations</h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_04.jpeg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">Susri Mayawatyi</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- Homeowner, Suburban Oasis</h5>
-          </article>
-
-          <article
-            class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2"
-          >
-            <img src="./images/test_08.jpeg" alt="Product image" />
-            <h3 class="l-pt-2 l-pb-1">MS Dhoni</h3>
-
-            <p class="l-py-1">
-              <i class="fa-solid fa-quote-left"></i>
-              ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
-              veniam fugiat delectus sunt.
-            </p>
-            <h5 class="l-pb-1 l-ml-auto">- Property Manager</h5>
-          </article>
-        </div>
-
-        <!-- Pagination section -->
-        <nav class="c-testinonial__pagination">
-          <button
-            class="c-testinonial__pagination-button"
-            id="testinonial-prev-button"
-            aria-label="Previous page"
-            title="Previous page"
-          >
-            &lt;&lt;
-          </button>
-
-          <div
-            class="c-testinonial__pagination-number"
-            id="testimonial-pagination-number"
-          ></div>
-
-          <button
-            class="c-testinonial__pagination-button"
-            id="testinonial-next-button"
-            aria-label="Next page"
-            title="Next page"
-          >
-            &gt;&gt;
-          </button>
-        </nav>
-      </section>
-
-      <!-- Contact us section -->
-      <section
-        class="c-contact-us__section--wrapper u-text__center u-side_padding l-flex l-flex__column l-flex__justify-space-between u-accent-bg__blue--mid"
-      >
-        <div
-          class="c-contact-us__section l-flex l-flex__align-center l-flex__column"
-        >
-          <h3 class="u-fs__300 l-mb-2 l-mt-3">Contact our Foundation</h3>
-          <p class="l-mb-2"><strong>Email:</strong> info@outbacknursery.ca</p>
-          <p class="l-mb-2">
-            <strong>Contact Address:</strong> 6016 Headquarters Rd, Courtenay,
-            British Columbia, V9J 1M7, Canada
+    <!-- Our story section -->
+    <section class="u-text__center u-side_padding">
+      <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">Our story</h2>
+      <div class="c-our-story__section l-flex l-flex__align-center l-flex__column">
+        <img src="./images/bg_our-story.jpg" alt="Story img">
+        <div class="c-our-story__section--text l-p-1 l-pb-4">
+          <h3 class="u-fs__300">
+            From Roots to Blooms at Outback Nursery & Garden Centre.
+          </h3>
+          <p class="l-p-1 u-fs__200 l-pb-4 l-pt-4">
+            This title communicates the narrative of the nursery's evolution
+            over time, from its beginnings in 1998-1999 to its current status
+            as a prominent garden center on Vancouver Island. It emphasizes
+            the journey, growth, and transformation of Outback Nursery,
+            inviting visitors to explore the story behind the establishment.
           </p>
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.807370234845!2d-125.05341972348377!3d49.75206817146727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712028201217!5m2!1sen!2sca"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+
+          <a href="./coming-soon.html" class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200">
+            Explore Our Journey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product section -->
+    <section class="u-text__center u-side_padding">
+      <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">Rooted in Quality</h2>
+      <h3 class="u-fs__300">
+        Explore our premium stock plants for a flourshing garden
+      </h3>
+
+      <div class="c-plant__section l-flex l-flex__align-center l-flex__row">
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center">
+          <img src="./images/plant_01.jpg" alt="Product image">
+          <h4 class="l-p-05">Cedar</h4>
+          <p>Indoor or outdoor use
+            1565 Leaves
+            Perfect for entranceway décor</p>
+          <a href="./coming-soon.html" class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light">
+            View More</a>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center">
+          <img src="./images/plant_02.jpg" alt="Product image">
+          <h4 class="l-p-05">Cedrus</h4>
+          <p class="">Dual trunks
+            More than 2,000 leaves
+            An ideal home or office decoration</p>
+          <a href="./coming-soon.html" class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light">
+            View More</a>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center">
+          <img src="./images/plant_03.jpg" alt="Product image">
+          <h4 class="l-p-05">Chamaecyparis</h4>
+          <p>Round
+            Full Sun to Part Shade
+            Ht: 24 inch Spr:24 inch</p>
+          <a href="./coming-soon.html" class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light">
+            View More</a>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center">
+          <img src="./images/plant_04.jpg" alt="Product image">
+          <h4 class="l-p-05">Cypress</h4>
+          <p class="">1650 leaves
+            UV resistant indoor / outdoor
+            Bold statemen</p>
+          <a href="./coming-soon.html" class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light">
+            View More</a>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center">
+          <img src="./images/plant_05.jpg" alt="Product image">
+          <h4 class="l-p-05">Colorado Spruce</h4>
+          <p>Deer-resistant, stunning blue foliage!
+            Picea pungens 'Baby Blue'</p>
+          <a href="./coming-soon.html" class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light">
+            View More</a>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center">
+          <img src="./images/plant_06.jpg" alt="Product image">
+          <h4 class="l-p-05">Eucalyptus Topiary</h4>
+          <p class="">Product Dimensions: H: 57 In. W: 18 In. D: 18 In
+            Perfectly highlights an office.</p>
+          <a href="./coming-soon.html" class="l-mt-2 u-btn__product u-white u-accent-bg__purple--light">
+            View More</a>
+        </article>
+      </div>
+      <a href="./coming-soon.html" class="l-mt-2 u-btn__green u-white u-accent-bg__green--light">
+        Find Your Perfect Plant</a>
+    </section>
+
+    <!-- Our story section -->
+    <section class="u-text__center u-side_padding">
+      <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">Let's Grow Together</h2>
+      <h3 class="u-fs__300">
+        Explore our plant installation services and join us in cultivating
+        lush green spaces.
+      </h3>
+      <div class="c-our-story__section l-flex l-flex__align-center l-flex__column">
+        <img src="./images/plant_instalation.jpg" alt="Plant installation">
+        <div class="c-our-story__section--text l-p-1 l-pb-4">
+          <p class="l-p-1 u-fs__200 l-pb-4 l-pt-4">
+            Welcome to our plant installation section, Our expert team
+            carefully selects and installs greenery to enhance your space with
+            natural beauty. From homes to businesses, we create lush
+            environments tailored to your preferences. With attention to
+            detail, we seamlessly integrate plants into your landscape,
+            transforming it into a vibrant oasis. Experience the difference of
+            professional installation and let us bring nature's touch to your
+            doorstep. Let's Grow Together – where every space flourishes.
+          </p>
+
+          <a href="./coming-soon.html" class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200">Grow
+            Better</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service section -->
+    <section class="u-text__center u-side_padding">
+      <h2 class="u-capitalize u-fs__500 l-m-3 l-mt-6">
+        Empower your green Journey
+      </h2>
+      <div class="c-service__section l-flex l-flex__align-center l-flex__column">
+        <img src="./images/anntts_tree.jpg" alt="anntts tree">
+        <div class="c-service__section--text l-p-1 l-pb-4">
+          <h3 class="u-fs__300 l-pb-2">Annette's Favorite Trees</h3>
+
+          <p class="l-p-1 u-fs__200 l-pb-2 l-pt-1">
+            Explore Annette's top picks for weeping Japanese maples and dwarf
+            conifers. From 'Crimson Queen' with wine-red foliage to 'Little
+            Gem' Spruce with tiny dark green needles, these trees add elegance
+            and charm to any garden. Perfect for containers, rockeries, or as
+            small specimens, they offer year-round interest and vibrant
+            colors. Let Annette's curated selection inspire your outdoor
+            space.
+          </p>
+          <a href="./coming-soon.html" class="l-p-1 u-btn__green u-white u-accent-bg__green--light u-fs__200">Explore
+            now!</a>
+        </div>
+      </div>
+
+      <div class="c-service__section--gift l-flex l-flex__align-center l-flex__column">
+        <h2 class="u-capitalize u-fs__500 l-mt-6">
+          Get Gift Certificates in 3 Easy Steps!
+        </h2>
+        <div class="c-service__section l-flex l-flex__column-reverse">
+          <div class="c-service__section--text l-p-1 l-pb-4 u-center__vertical">
+            <p class="l-p-1 u-fs__200 l-p-2">
+              Looking for the perfect gift? Outback Nursery makes it simple
+              with our convenient gift certificates! In just three easy steps,
+              you can surprise your loved ones with the joy of gardening:
+            </p>
+            <ol>
+              <li class="l-mt-1">
+                <p class="c-service__section__title">
+                  Introduce yourself by sending an email to
+                  <a href="./coming-soon.html">info@outbacknursery.ca</a>
+                </p>
+
+                <button id="gift-step-1-plus" class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1"
+                  onclick="handleStepVisibility(1)">
+                  +
+                </button>
+                <button id="gift-step-1-minus"
+                  class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1 hide-step-1"
+                  onclick="handleStepVisibility(1)">
+                  -
+                </button>
+                <p class="l-p-2 hide-step-1" id="step-des-1">
+                  This step is asking you to initiate contact with Outback
+                  Nursery by sending them an email. The email address
+                  provided, info@outbacknursery.ca, is where you should send
+                  your message. When you send the email, you should introduce
+                  yourself, provide any necessary details, and specify the
+                  purpose of your communication. This step is essentially the
+                  first point of contact with the nursery, allowing them to
+                  know who you are and why you are reaching out to them.
+                </p>
+              </li>
+
+              <li class="l-mt-1">
+                <p class="c-service__section__title">
+                  Make a quick payment via E-transfer to
+                  <a href="./coming-soon.html">info@outbacknursery.ca</a>,
+                  specifying your chosen amount.
+                </p>
+
+                <button id="gift-step-2-plus" class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1"
+                  onclick="handleStepVisibility(2)">
+                  +
+                </button>
+                <button id="gift-step-2-minus"
+                  class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1 hide-step-2"
+                  onclick="handleStepVisibility(2)">
+                  -
+                </button>
+                <p class="l-p-2 hide-step-2" id="step-des-2">
+                  Once you've made contact and established what you want to
+                  purchase or the service you're interested in, the next step
+                  is to make a payment. In this case, they are asking you to
+                  make a payment via E-transfer to the same email address,
+                  info@outbacknursery.ca. E-transfer is a secure and
+                  convenient way to transfer funds electronically from your
+                  bank account to the recipient's account. When making the
+                  transfer, you need to specify the amount you are paying,
+                  ensuring that it matches the agreed-upon price for the
+                  product or service.
+                </p>
+              </li>
+              <li class="l-mt-1">
+                <p class="c-service__section__title">
+                  Sit back and relax as we prepare your personalized voucher.
+                  We'll scan and email it directly to you or to a recipient of
+                  your choice.
+                </p>
+
+                <button id="gift-step-3-plus" class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1"
+                  onclick="handleStepVisibility(3)">
+                  +
+                </button>
+                <button id="gift-step-3-minus"
+                  class="u-bg__primary--mid u-white u-cursor-pointer u-fs__200 l-ml-1 hide-step-3"
+                  onclick="handleStepVisibility(3)">
+                  -
+                </button>
+                <p class="l-p-2 hide-step-3" id="step-des-3">
+                  After you've made the payment, Outback Nursery will process
+                  your order or service request. In this step, they are
+                  letting you know that they will prepare a personalized
+                  voucher for you. This voucher could be for various purposes,
+                  such as a gift certificate, discount coupon, or proof of
+                  purchase. Once the voucher is ready, they will scan it and
+                  send it to you via email. Alternatively, if you're
+                  purchasing the voucher as a gift for someone else, they can
+                  send it directly to the recipient's email address. This step
+                  assures you that once you've completed the payment, they
+                  will take care of the rest and ensure you receive your
+                  voucher promptly.
+                </p>
+              </li>
+            </ol>
+            <a href="./coming-soon.html"
+              class="l-p-1 l-mt-2 u-btn__green u-white u-accent-bg__green--light u-fs__200">Gift Nature's Beauty</a>
           </div>
+          <img class="l-mt-2 l-full-height" alt="Gift image" src="./images/gift.jpg">
         </div>
+      </div>
+    </section>
 
-        <div
-          class="c-contact-us__section l-flex l-flex__align-center l-flex__column"
-        >
-          <h3 class="u-fs__300 l-mb-2 l-mt-3">We are here to help!</h3>
+    <!-- Our People section -->
+    <section class="u-text__center u-side_padding">
+      <h2 class="u-capitalize u-fs__500 l-mt-3 l-mb-1 l-mt-6">
+        Meet Our Team
+      </h2>
+      <div id="c-our-people__section_page-1" data-current-page="1" aria-live="polite"
+        class="carousell c-our-people__section l-flex l-flex__align-center l-flex__row l-grid__gap-3 l-pt-4">
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_01.jpg" alt="Product image">
+          <h3 class="l-pt-2">Sumit Joshi</h3>
 
-          <form
-            class="c-contact-us__section--form-container l-p-3 l-mb-2"
-            action="#"
-            method="post"
-          >
-            <label class="u-fw__bold" for="name">Your Name:</label>
-            <input
-              class="l-mt-1 l-mb-2"
-              type="text"
-              id="name"
-              name="name"
-              required
-            />
-            <label class="u-fw__bold" for="email">Your Email:</label>
-            <input
-              class="l-mt-1 l-mb-2"
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
-            <label class="u-fw__bold" for="phone">Your Phone:</label>
-            <input
-              class="l-mt-1 l-mb-2"
-              type="text"
-              id="phone"
-              name="phone"
-              required
-            />
-            <label class="u-fw__bold" for="message">Your Message:</label>
-            <textarea
-              class="l-mt-1 l-mb-2"
-              id="message"
-              name="message"
-              rows="4"
-              required
-            ></textarea>
-            <input
-              class="l-mt-1 l-mb-2 l-px-2 l-py-1 u-fs__200 u-btn__product"
-              type="submit"
-              value="Submit"
-            />
-          </form>
+          <p class="l-p-1">Nursery Manager</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Charles</h3>
+
+          <p class="l-p-1">Greenhouse Technician</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Yogi ji</h3>
+
+          <p class="l-p-1">Plant Health Specialist</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Mamta</h3>
+
+          <p class="l-p-1">Customer Service</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Kumar sanu</h3>
+
+          <p class="l-p-1">Crew Leader</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Himanshu</h3>
+
+          <p class="l-p-1">Delivery Driver</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Ramesh</h3>
+
+          <p class="l-p-1">Marketing Coordinator</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Rinku yadav</h3>
+
+          <p class="l-p-1">Team member</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Kumar sanu</h3>
+
+          <p class="l-p-1">Team member</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Tolsi das</h3>
+
+          <p class="l-p-1">Quality Control</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Kalsain</h3>
+
+          <p class="l-p-1">Warehouse Supervisor</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Lamba hai</h3>
+
+          <p class="l-p-1">Plant Pathologist</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Tolsi das</h3>
+
+          <p class="l-p-1">Quality Control</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Mausi chauhan</h3>
+
+          <p class="l-p-1">Supervisor</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/team_02.webp" alt="Product image">
+          <h3 class="l-pt-2">Mausi chauhan</h3>
+
+          <p class="l-p-1">Supervisor</p>
+          <p class="l-p-1 u-border-green__top">
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <ul class="c-our-people__social l-mr-1">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <!-- Pagination section -->
+      <nav class="c-our-story__pagination">
+        <button class="c-our-story__pagination-button" id="story-prev-button" aria-label="Previous page"
+          title="Previous page">
+          &lt;&lt;
+        </button>
+
+        <div class="c-our-story__pagination-number" id="our-story-pagination-numbers"></div>
+
+        <button class="c-our-story__pagination-button" id="story-next-button" aria-label="Next page" title="Next page">
+          &gt;&gt;
+        </button>
+      </nav>
+    </section>
+    <!-- Social media section -->
+    <section class="l-mt-6 u-text__center u-side_padding">
+      <div class="c-social__section l-flex l-flex__align-center l-flex__column">
+        <div class="c-social__section l-flex l-flex__column-reverse">
+          <div class="c-social__section--text l-p-1 l-pb-4 u-center__vertical">
+            <h2 class="u-capitalize u-fs__500 l-mt-6">
+              Stay Socially Blossomed
+            </h2>
+            <p class="l-mt-2">
+              Follow us on social media for daily insights, educational
+              resources, and adorable moments from our nurturing environment.
+              Join our community and be a part of the journey in fostering
+              happy and healthy childhoods!
+            </p>
+            <div class="c-social__icons l-flex l-flex__justify-space-around l-mt-2">
+              <img class="l-mt-2" alt="Facebook icon" src="./images/fb_icon.png">
+              <img class="l-mt-2" alt="Insta icon" src="./images/insta_icon.png">
+              <img class="l-mt-2" alt="Twitter icon" src="./images/twitter_icon.png">
+            </div>
+          </div>
+          <img class="l-mt-2" alt="Social icon" src="./images/social_media.jpg">
         </div>
-      </section>
-    </main>
-    <footer class="u-accent-bg__green--darkest u-white">
-      <div class="c-footer_text l-flex l-flex__column l-flex__align-center">
-        <a href="./index.html" class="u-text__center">
-          <image
-            class="c-header__logo"
-            src="./images/logo.png"
-            alt="Logo image"
-          ></image>
-          <h4 class="u-white">Outback Nursery</h4>
+      </div>
+    </section>
+
+    <!-- Testimonails section -->
+    <section class="u-text__center u-side_padding">
+      <h2 class="u-capitalize u-fs__500 l-mt-3 l-mb-1 l-mt-6">
+        Testimonails
+      </h2>
+      <div id="c-testimonial__section_page"
+        class="c-our-testimonial__section l-flex l-flex__align-center l-flex__row l-grid__gap-3 l-pt-4">
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_05.jpeg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Kumar Sanu</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">
+            - Landscape Designer, GreenThumb Designs
+          </h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_06.jpg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Pappu Tiwari</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- Homeowner, Suburban Oasis</h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_07.png" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Chris gale</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- GreenLeaf Corporate Campus</h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_08.webp" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Bhoomi</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- General Contractor</h5>
+        </article>
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_01.jpeg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Onichan shen</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- Property Manager</h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_02.jpeg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Rajpal Yadav</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- ABC Landscaping</h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_03.jpeg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Modi ji</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- Head of Operations</h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_04.jpeg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">Susri Mayawatyi</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- Homeowner, Suburban Oasis</h5>
+        </article>
+
+        <article class="l-flex l-flex__justify-center l-flex__column l-flex__align-center l-px-2">
+          <img src="./images/test_08.jpeg" alt="Product image">
+          <h3 class="l-pt-2 l-pb-1">MS Dhoni</h3>
+
+          <p class="l-py-1">
+            <i class="fa-solid fa-quote-left"></i>
+            ytestysy Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis odio voluptate nesciunt voluptatum repudiandae,
+            veniam fugiat delectus sunt.
+          </p>
+          <h5 class="l-pb-1 l-ml-auto">- Property Manager</h5>
+        </article>
+      </div>
+
+      <!-- Pagination section -->
+      <nav class="c-testinonial__pagination">
+        <button class="c-testinonial__pagination-button" id="testinonial-prev-button" aria-label="Previous page"
+          title="Previous page">
+          &lt;&lt;
+        </button>
+
+        <div class="c-testinonial__pagination-number" id="testimonial-pagination-number"></div>
+
+        <button class="c-testinonial__pagination-button" id="testinonial-next-button" aria-label="Next page"
+          title="Next page">
+          &gt;&gt;
+        </button>
+      </nav>
+    </section>
+
+    <!-- Contact us section -->
+    <section
+      class="c-contact-us__section--wrapper u-text__center u-side_padding l-flex l-flex__column l-flex__justify-space-between u-accent-bg__blue--mid">
+      <div class="c-contact-us__section l-flex l-flex__align-center l-flex__column">
+        <h3 class="u-fs__300 l-mb-2 l-mt-3">Contact our Foundation</h3>
+        <p class="l-mb-2"><strong>Email:</strong> info@outbacknursery.ca</p>
+        <p class="l-mb-2">
+          <strong>Contact Address:</strong> 6016 Headquarters Rd, Courtenay,
+          British Columbia, V9J 1M7, Canada
+        </p>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.807370234845!2d-125.05341972348377!3d49.75206817146727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712028201217!5m2!1sen!2sca"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="c-contact-us__section l-flex l-flex__align-center l-flex__column">
+        <h3 class="u-fs__300 l-mb-2 l-mt-3">We are here to help!</h3>
+
+        <form class="c-contact-us__section--form-container l-p-3 l-mb-2" action="#" method="post">
+          <label class="u-fw__bold" for="name">Your Name:</label>
+          <input class="l-mt-1 l-mb-2" type="text" id="name" name="name" required>
+          <label class="u-fw__bold" for="email">Your Email:</label>
+          <input class="l-mt-1 l-mb-2" type="email" id="email" name="email" required>
+          <label class="u-fw__bold" for="phone">Your Phone:</label>
+          <input class="l-mt-1 l-mb-2" type="text" id="phone" name="phone" required>
+          <label class="u-fw__bold" for="message">Your Message:</label>
+          <textarea class="l-mt-1 l-mb-2" id="message" name="message" rows="4" required></textarea>
+          <input class="l-mt-1 l-mb-2 l-px-2 l-py-1 u-fs__200 u-btn__product" type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="u-accent-bg__green--darkest u-white">
+    <div class="c-footer_text l-flex l-flex__column l-flex__align-center">
+      <a href="./index.html" class="u-text__center">
+        <img class="c-header__logo" src="./images/logo.png" alt="Logo image">
+        <h4 class="u-white">Outback Nursery</h4>
+      </a>
+
+      <div class="c-social__icons l-flex l-flex__justify-space-around">
+        <a class="u-white cu" href="./coming-soon.html">
+          <img class="l-mt-1 l-mx-2" alt="Icon image" src="./images/fb_icon.png">
         </a>
-
-        <div class="c-social__icons l-flex l-flex__justify-space-around">
-          <a class="u-white cu" href="./coming-soon.html"
-            ><image class="l-mt-1 l-mx-2" src="./images/fb_icon.png"
-          /></a>
-          <a class="u-white cu" href="./coming-soon.html"
-            ><image class="l-mt-1 l-mx-2" src="./images/insta_icon.png"
-          /></a>
-          <a class="u-white cu" href="./coming-soon.html"
-            ><image class="l-mt-1 l-mx-2" src="./images/twitter_icon.png"
-          /></a>
-        </div>
-
-        <div class="l-flex l-flex__column l-flex__align-center l-pt-2">
-          <h4>Current Hours</h4>
-          <p class="l-pt-1">Monday - Saturday</p>
-          <p class="l-pt-1">8:00 am - 6:00 pm</p>
-          <p class="l-pt-1">Sundays + Holidays</p>
-          <p class="l-pt-1">9:00 am - 5:30 pm</p>
-        </div>
+        <a class="u-white cu" href="./coming-soon.html">
+          <img class="l-mt-1 l-mx-2" alt="Icon image" src="./images/insta_icon.png">
+        </a>
+        <a class="u-white cu" href="./coming-soon.html">
+          <img class="l-mt-1 l-mx-2" alt="Icon image" src="./images/twitter_icon.png">
+        </a>
       </div>
-      <div class="l-pt-2 l-pb-1 l-px-1 u-text__center">
-        This is a fictional website, None of the content and images were
-        approved by the business owner. © Copyright 2024
+
+      <div class="l-flex l-flex__column l-flex__align-center l-pt-2">
+        <h4>Current Hours</h4>
+        <p class="l-pt-1">Monday - Saturday</p>
+        <p class="l-pt-1">8:00 am - 6:00 pm</p>
+        <p class="l-pt-1">Sundays + Holidays</p>
+        <p class="l-pt-1">9:00 am - 5:30 pm</p>
       </div>
-    </footer>
-  </body>
-  <script src="main.js"></script>
+    </div>
+    <div class="l-pt-2 l-pb-1 l-px-1 u-text__center">
+      This is a fictional website, None of the content and images were
+      approved by the business owner. © Copyright 2024
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+
 </html>
